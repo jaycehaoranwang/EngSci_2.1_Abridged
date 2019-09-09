@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{amsmath,amsfonts,mathtools}
+\usepackage{hyperref}
+
+\begin{document}
+\title{AER210 Abridged}
+\author{Aman Bhargava}
+\date{September 2019}
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Review: Stuff to Have Memorized}
+%TODO: Populate this with stuff from MAT195
+
+\chapter{In-Class Review}
+\section{Vectors \& Vector Functions}
+
+\begin{itemize}
+\item Vector = magnitude + direction
+\item If the origin of the vector is the origin of the coordinate system, it's a position vector.
+\item Dot product: 
+$\vec{a} \cdot \vec{b} = \vec{a}_1 \cdot \vec{b}_1 + ... + \vec{a}_n \cdot \vec{b}_n$
+\item Cross product: $\vec{a} \times \vec{b} = det(i, j, k; \vec{a}^{T}; \vec{b}^{T})$
+\item Cross product is the area of the paralellogram traced out by the two vectors.
+\item Scalar triple product: $\vec{a} \cdot (\vec{b} \times \vec{c})$, produces a scalar, represents the volume of the parallelepiped formed by the three vectors.
+\item To get the derivative of a vector function, simply  take the derivative of each of the internal functions and package them into a new vector function.
+\end{itemize}
+
+\section{Arc Length}
+\subsection{One-Variable Functions}
+$$L = \int_a^b \sqrt{1+[f'(x)]^2} dx$$
+
+\subsection{Parametric Functions}
+Let $y(t)$ and $x(t)$ describe a parametric function in 2 dimensions. Then the arc length would be:
+$$L = \int_a^b \sqrt{[x'(t)]^2 + [y'(t)]^2} dx$$
+
+\subsection{Vector Funtions}
+Let $\vec{r}(t)$ describe a vector function that converts a scalar $t$ into a vector. Then the arclength function would be:
+$$L = \int_a^b |\vec{r}(t)| dt$$
+
+\subsection{Reparamerizing with respect to Arc Length}
+\paragraph{What is this? } Let there be a vector function $\vec{r}(t)$ and its correponding arc length function 
+$s(t)$. Since $s$ is strictly increasing, we can safely \textbf{reparameterize} $\vec{r}(t)$ to be 
+$\vec{r}(s(t)) \to \vec{r}(s)$. 
+\paragraph{Why would you want to do this? } This type of reparameterization is useful because now we do not have to
+rely on any particular coordinate system.
+\paragraph{Steps to Reparameterizing}
+\begin{enumerate}
+\item Find $s(t) = \int_a^b |\vec{r}(u)| du$.
+\item Put $s$ in terms of $t$.
+\item Substitute the expression found in part 2 in the original $\vec{r}(t)$.
+\end{enumerate}
+
+
+\section{Partial Derivatives}
+\subsection{Functions of Several Variables}
+\paragraph{A function of two variables } transforms each pair of Reals $(x, y)$ in a given set to a single real number. The given set is the domain, and the set of reals that the pair is transformed to is the range.
+
+\paragraph{Level functions } are functions that have $f(x, y) = k$ for given ranges of $(x, y)$
+
+\paragraph{Functions of 3 or more variables } are pretty easy to extrapolate from functions of two variables, tbh.
+
+\subsection{Limits and Continuity with Functions of Several Variables}
+\subsubsection{Limits}
+\paragraph{Definition of limit } with many variables:
+$$\lim_{(x, y) \to (a, b)} f(x, y) = L$$
+if for every number $\epsilon > 0$ there is a corresponding number $\delta > 0$ s.t.
+if $0 < \sqrt{(x-a)^2 + (y-b)^2} < \delta$ then $|f(x, y) - L | < \epsilon$
+
+\paragraph{How to find: }
+Regard the non-mentioned variable in the notation as a constant and differentiate with respect to the mentioned variable.
+
+\subsection{Higher Partial Derivatives}
+$$(f_x)_y = f_{xy} = f_{12} = \frac{\partial}{\partial y} (\frac{\partial f}{\partial x}) = \frac{\partial ^2 f}{\partial y \partial x} = \frac{\partial z}{\partial y \partial x}$$
+
+\subsubsection{Clairaut's Theorem}
+If $f_{xy}$ and $f_{yx}$ are both \textbf{defined} and \textbf{continuous} on disk $D$ then:
+$$f_{xy}(a, b) = f_{yx}(a, b)$$
+
+\section{Gradient}
+Think of the gradient like an operator that applies to functions of many variables (functions of vectors). The $\nabla$
+just calculates the partial derivatative of the function with respect to each of its input variables and puts it
+into a vector.
+
+$$\nabla f(x, y) = [\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}]$$
+
+Or, more generally for a function $f(\vec{x})$, $$\nabla f(\vec{x}) = [\frac{\partial f}{\partial x_1}, ... , 
+\frac{\partial f}{\partial x_n}]$$
+
+\section{Chain Rule with Many Variables}
+Let there be a function $f(\vec{x})$. Let $\vec{x}$ of length $n$ be a function of $\vec{t}$ of length $m$. 
+We take the partial derivative of $f$  with respect to $t_i$ by the following:
+
+$$\frac{\partial f}{\partial t_i} = \frac{\partial f}{\partial x_1} \frac{\partial x_1}{\partial t_i} + 
+... + \frac{\partial f}{\partial x_n} \frac{\partial x_n}{\partial t_i} $$
+
+\chapter{Multiple Integrals}
+
+
+
+\end{document}
