@@ -1,0 +1,31 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{amsmath,amsfonts,mathtools}
+\usepackage{hyperref}
+
+\begin{document}
+\title{ECE253 Abridged}
+\author{Aman Bhargava}
+\date{September 2019}
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\chapter{Review: Bit Manipulation}
+Have you ever wanted to be a cool computer person who does things with ones and zero's instead of actual letters and numbers like a normal person? If so, this is the right chapter for you!
+
+\section{Converting to and from Different Bases}
+Base 10, 2, and 16 are most commonly used. Base 16 is just a way to read base 2 in a more efficient manner. In order to work with bits it's pretty important to know how to convert back and forth because the test is all on paper. 
+
+\subsection{Converting from base 10 $\to$ base 2}
+You keep dividing by two, keeping track of the remainder. Eventually the number you will be trying to divide by two will be 1. You keep going until it's zero + remainder(1). Then you read the reaminders upward from that final 1.
+
+\subsection{Converting from base 2 $\to$ base 16}
+Any hex number can be expressed as 4 binary digits. Make a correspondence table between quadruplets of binary numbers and hex (1-f, inclusive). To convert to base 16 subdivide from right to left in groups of four binary digits. Pad the leftmost part with leading zeros and convert using the table. 
+
+\subsection{Converting from base 10 $\to$ base 16 (and vice versa)}
+Just go through base 2 fam.
+
+\end{document}
