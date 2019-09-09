@@ -11,6 +11,7 @@ do
   echo "$line"
   pdflatex "$line".tex
   cp "$line".pdf ../pdf
+  rm "$line".pdf
 done < "$input"
 
 exit 0
