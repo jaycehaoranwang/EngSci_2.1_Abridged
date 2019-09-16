@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  10 SEP 2019 02:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 SEP 2019 15:00
 entering extended mode
 **./ECE253.tex
 (ECE253.tex
@@ -423,30 +423,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [3]
 Chapter 2.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 [4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
  (ECE253.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
-
-
-Package rerunfilecheck Warning: File `ECE253.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `ECE253.out':
-(rerunfilecheck)             Before: 327F2301D2588291F610DFF206B836C4;424
-(rerunfilecheck)             After:  8D704FAFC39062A16DBF0D9EE80F1212;490.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package rerunfilecheck Info: File `ECE253.out' has not changed.
+(rerunfilecheck)             Checksum: 777A905829CCFF1E39F7C46CA4BEA627;763.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 6242 strings out of 494866
- 95368 string characters out of 3176398
- 181333 words of memory out of 3000000
- 9829 multiletter control sequences out of 15000+200000
+ 6256 strings out of 494866
+ 95517 string characters out of 3176398
+ 182333 words of memory out of 3000000
+ 9835 multiletter control sequences out of 15000+200000
  13009 words of font info for 50 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  42i,6n,31p,314b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -456,9 +449,9 @@ MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/abhargav
 a/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts
 /cm/cmr17.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/insta
 ll/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ECE253.pdf (5 pages, 59946 bytes).
+Output written on ECE253.pdf (5 pages, 66197 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

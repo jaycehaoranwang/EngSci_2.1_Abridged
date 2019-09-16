@@ -1,0 +1,144 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage{amsmath,amsfonts,mathtools}
+\usepackage{hyperref}
+
+\begin{document}
+\title{PHY293 Abridged}
+\author{Aman Bhargava}
+\date{September 2019}
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+Prof. Grisouard has put up some pretty solid 
+\href{https://github.com/PHY293-Grisouard/Chapters-2019}{notes} written in jupyter notebooks. 
+Those offer a great comprehensive guide for the course contents. The goal here is to give
+a very concise overview of the things you need to know (NTK) to answer exam questions. Unlike
+some of our other courses, you don't need to be very intimately familiar with the derivations
+of everything in order to solve the problems (though it certainly doesn't hurt). Think of this 
+as a really good cheat sheet.
+
+\chapter{Simple Harmonic Oscillators (SHO's)}
+\section{Set Up}
+Pretty much the same as covered last year.
+$$F_{restorative} = -kx$$
+$$F_{net} = ma$$
+$$ma + kx = 0$$
+We let $\omega_0^2 = k/m$ and rename $a$ to $\ddot{x}$
+\section{ODE and Solution}
+\paragraph{ODE:}
+$$\ddot{x} + \omega_0^2 x = 0$$
+\paragraph{Solution:}
+$$x(t) = a cos(\omega_0 t + \theta)$$
+Solve for 2 unknowns (usually $a$ and $\theta$) based on two initial conditions.
+
+\chapter{Dampened Harmonic Oscillators (DHO's)}
+\section{Set Up}
+We have all the same forces from last time plus a force of friction. We kind of have our
+hands tied with what models of friction we can use (remember how friction can be proportional
+to velocity, acceleration?) because this course only deals with linear systems. Therefore our
+one and only formula for friction is:
+
+$$F_{friction} = F_f = -bv$$
+
+\section{ODE and Solutions}
+\paragraph{ODE}
+We let $\gamma = b/m$ so that:
+$$\ddot{x} + \gamma \dot{x} + \omega_0^2 x = 0$$
+
+\subsection{General Solution}
+
+And for underdampened and over dampened, the overall solution looks like:
+$$x(t) = ae^{rt}$$
+Where $a, r \in \C$, remembering that $$e^{i\theta} = i sin(\theta) + cos(\theta)$$
+
+This is actually really cool, because the existence of a complex component in $r$ is what 
+enables oscillation. 
+
+If we populate the initial ODE with the derivatives of our $x(t)$, we get:
+$$ar^2e^{rt} + \gamma are^{rt} + \omega ae^rt = 0$$
+$$r^2 + \gamma r + \omega = 0$$
+
+This results in a simple quadratic for which you can solve for $r$ using the quadratic formula.
+
+$$x = \frac{b +/- \sqrt{b^2 - 4ac}}{2a}$$
+
+There will be up to 2 $r$ values. Since the solution space is a 2-D vector space, any 
+linear combination of vectors (i.e. values of $r$) is still a valid vector.
+
+You might be wondering how $a$ figures into this whole thing. That's just based on initial
+conditions, really. 
+
+\subsection{Regieme 1: Underdampened}
+If the dampening is weak enough, there will still be \textbf{some} oscillation before the 
+oscillator comes to rest. In this case, the general solution is:
+
+$$x(t) = A_0 e^{-\gamma t/2} cos(w_dt + \phi)$$
+Where $w_d^2 = w_dampened^2 = \omega_0^2 - \frac{\gamma^2}{4}$
+
+You get this by solving for $r$ with the quadratic formula, plugging the two imaginary 
+roots in, then taking just the real components because you know that $x(t)$ is real.
+
+\subsubsection{Logarithmic Decrement}
+This quantity is the $ln$ of the ratio of 1 peak to the next.
+
+$$\frac{\gamma T_d}{2}$$
+
+Where $T_d$ is the period based on $w_d$.
+
+\subsection{Regieme 2: Heavily Dampened}
+In this case both roots are real. This occurs when $\gamma^2-4\omega_0^2 > 0$
+
+Let $r_p, r_m$ be the two real roots. Then the solution is:
+
+$$x(t) = a_pe^{r_pt} + a_me^{r_mt}$$
+
+You can solve for the a values at leisure with two initial conditions.
+
+\subsection{Regieme 3: Critically Dampened}
+When the discriminant of the quadratic is zero (i.e. $\gamma^2 = \4\omega_0^2 = $), you
+get an overconstrained problem because you have fewer unknowns than you have constraints.
+Therefore, the new solution for this exact case is:
+
+$$x(t) = (A + Bt)e^{-\gamma t/2}$$
+
+And it decays the fastest and is pretty cool. Yay.
+
+\section{Energy}
+$$E = K + U$$
+$$E = \frac{1}{2}mv^2 + \frac{1}{2}kx^2$$
+$$\frac{dE}{dt} = -bv^2$$
+
+\subsection{Underdampened Energy}
+The equations get really messy so we assume that $\omega_0 >> \gamma/2$ and $\omega_0 = \omega_d$. After 
+you sub everything in and use the pythagorean identity to cancel out the squared sine/cosine,
+you get:
+
+$$E = \frac{1}{2} kA_0^2e^{-\gamma/t}$$
+
+\subsection{Critical and Overdampened Energy}
+These ones are really easy, they just decay and that's it. Just remember the equations for 
+energy and solve for the velocity equation.
+
+\section{Q-Factor}
+$Q$ is a measure of the tendency to oscillate dividied by the tendency to dampen.
+$$Q = frac{\omega_0}{\gamma}$$
+Let $\tau = \frac{1}{gamma}$ be proportional to the lifetime of the oscillator. Then 
+$n = \frac{\tau}{T_0}$ is the number of cycles in a lifetime.
+$$Q = 2\pi n$$
+
+
+$Q$ is also proportional to the rate at which dampening removes energy from the system. Then
+$$E_n = E_0e^{-\gamma t}$$
+Represents the amount of mechanical energy in the system at time $t$.
+$$\frac{E_n - E_{n+1}}{E_n} = ... = \frac{2\pi}{Q}$$
+
+Therefore $Q$ is the energy in oscillator divided by the amount of energy lost at the
+following \textbf{radian}.
+
+
+
+
+\end{document}
