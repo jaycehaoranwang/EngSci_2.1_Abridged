@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 SEP 2019 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  18 SEP 2019 22:39
 entering extended mode
 **./MAT292.tex
 (MAT292.tex
@@ -391,53 +391,43 @@ Chapter 2.
 
 ]
 Chapter 3.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 [4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (MAT292.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
-
-
-Package rerunfilecheck Warning: File `MAT292.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MAT292.out':
-(rerunfilecheck)             Before: 8303B8DC967D4B60DC0CE24E251FB673;594
-(rerunfilecheck)             After:  05F15DA34D21C3F0CCAAFB08D598A7D8;583.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package rerunfilecheck Info: File `MAT292.out' has not changed.
+(rerunfilecheck)             Checksum: 05F15DA34D21C3F0CCAAFB08D598A7D8;583.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 6257 strings out of 494866
- 95461 string characters out of 3176398
+ 6255 strings out of 494866
+ 95442 string characters out of 3176398
  182333 words of memory out of 3000000
  9832 multiletter control sequences out of 15000+200000
  12702 words of font info for 49 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  42i,6n,30p,226b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.2.3} has been referenced but does not exi
-st, replaced by a fixed one
-
-</Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb></Users/abhargava/Library/Application Support/Mi
-KTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/abhargava
+</Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb></Users/abhargava/Library/Application Support/
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/abharga
+va/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
+s/cmextra/cmex8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/abhargava/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></Users/abhargava/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/abhargava
 /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cmextra/cmex8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/abhargava/Library/Appl
-ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-</Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></Users/abhargava/Library/Application Support/MiK
-TeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/abhargava/L
-ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on MAT292.pdf (5 pages, 112512 bytes).
+cm/cmr8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Applicatio
+n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on MAT292.pdf (5 pages, 112492 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

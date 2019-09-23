@@ -9,3 +9,21 @@
 \contentsline {section}{\numberline {2.3}Inverter}{4}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}XOR}{4}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Boolean Algebra}{4}{section.2.5}% 
+\contentsline {paragraph}{Dual Form}{5}{section*.2}% 
+\contentsline {paragraph}{Duality: }{5}{section*.3}% 
+\contentsline {section}{\numberline {2.6}Useful Boolean Expression Rules}{5}{section.2.6}% 
+\contentsline {paragraph}{Distributive Properties: }{5}{section*.4}% 
+\contentsline {section}{\numberline {2.7}NAND and NOR (TB 2.7)}{6}{section.2.7}% 
+\contentsline {section}{\numberline {2.8}Three-Way Light Control (TB 2.8.1)}{6}{section.2.8}% 
+\contentsline {section}{\numberline {2.9}Intro to Verilog}{6}{section.2.9}% 
+\contentsline {paragraph}{Notes on Implementation}{6}{section*.5}% 
+\contentsline {subsection}{\numberline {2.9.1}Code: 3-Way Multiplexer}{6}{subsection.2.9.1}% 
+\contentsline {paragraph}{Can you make the assignment more efficient?}{6}{section*.6}% 
+\contentsline {paragraph}{Because $s$ is only 1-bit and $a, b$ are two bits, $s$ is extended with a \textbf {0}, which makes the logic incorrect!}{7}{section*.7}% 
+\contentsline {paragraph}{General Notes on how Syntax Works:}{7}{section*.8}% 
+\contentsline {section}{\numberline {2.10}Full Adder}{7}{section.2.10}% 
+\contentsline {paragraph}{Description}{7}{section*.9}% 
+\contentsline {paragraph}{Review of Outcomes}{7}{section*.10}% 
+\contentsline {paragraph}{Now let's make it in verilog!}{8}{section*.11}% 
+\contentsline {paragraph}{Now we make a 3-bit adder out of full adders in Verilog!}{8}{section*.12}% 
+\contentsline {paragraph}{Weird constant syntax: }{8}{section*.13}% 

@@ -151,7 +151,51 @@ $$\frac{\partial f}{\partial t_i} = \frac{\partial f}{\partial x_1} \frac{\parti
 ... + \frac{\partial f}{\partial x_n} \frac{\partial x_n}{\partial t_i} $$
 
 \chapter{Multiple Integrals}
+Pretty much the same as regular integrals, you just do two. You can apply them to volumes under surfaces.
 
+\section{Basic Meaning and Solving}
+
+\section{Leibniz Integral Rule (Differentiability of Integral with Respect to Parameter)}
+The Leibniz integral rule simply lets you more easily take the derivative of the integral of a multivariable
+function where the variable you are integrating with respect to is not the same as the variable you are taking
+the derivative with respect to.
+$$\frac{d}{dx} \int_a^b f(x, t) dt$$
+
+\subsection{Constant Bounds of Integration}
+When you are integrating from one constant to another $[a, b]$, the result is quite simple and elegant.
+$$\frac{d}{dx} \int_a^b f(x, t) dt = \int_a^b \frac{\partial f}{\partial x} dt$$
+
+\subsection{Derivation}
+Let's write $\frac{d}{dx} \int_a^b f(x, t) dt$ in terms of the definition of the derivative:
+\begin{align*}
+& = \frac{\int_a^b f(x +\Delta x, t)dt - \int_a^b f(x+\Delta x, t)dt}{\Delta x} \\
+& = \frac{\int_a^b f(x, t) dx + \int_a^b \frac{\partial f}{\partial x} dt \Delta t dx - \int_a^b f(x, t) dt}{\Delta x} \\
+& = \int_a^b \frac{\partial f}{\partial t} dx \\
+\label{Constant Bounds}
+\end{align*}
+
+\subsection{Variable Bounds of Integration}
+Final result:
+$$\frac{d}{dx} \int_{a(t)}^{b^t} f(x, t) dt = \int_{a(t)}^{b(t)} \frac{\partial f}{\partial x} dt - f(a, t)\frac{da}{dt} + f(b, t)\frac{db}{dt}$$
+
+\section{Polar Coordinates with Multiple Integrals}
+Recall $r^2 = x^2 + y^2$, $x = rcos(\theta)$, $y = rsin(\theta)$
+
+\paragraph{A polar rectangle} is of the form $$R = {(r, \theta) | a \leq r \leq b, \alpha \leq \theta \leq \beta}$$
+
+\paragraph{Basic form of double integral in polar coordinates: }
+$$\iint_R g dA = \int_{\alpha}^{\beta} \int_a^b g(r, \theta)\,dr\,d\theta$$
+
+\subsection{Change to Polar Coordinates in Double Integrals}
+$$\iint_R f(x, y) dA = \int_{\alpha}^{\beta}\int_a^b f(rcos(\theta), rsin(\theta))*r \,dr\,d\theta$$
+Make sure not to forget the $r$ in the integral!
+
+\subsection{Variable Bounds of Integration for $r$}
+$$D = {(r, \theta) | \alpha \leq \theta \leq \beta, h(\theta) \leq r \leq g(\theta)}$$
+Then:
+$$\iint_D f(r, \theta) = \int_{\alpha}^{\beta} \int_{h(\theta)}^{h(\theta)} f(r, \theta)*r \, dr \, d\theta$$
+
+\section{Applications of Multiple Integrals}
 
 
 \end{document}

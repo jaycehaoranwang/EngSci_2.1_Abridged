@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 SEP 2019 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  23 SEP 2019 16:58
 entering extended mode
 **./ECE253.tex
 (ECE253.tex
@@ -263,23 +263,65 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip50
-) (ECE253.aux)
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/listings.sty"
+\lst@mode=\count115
+\lst@gtempboxa=\box29
+\lst@token=\toks20
+\lst@length=\count116
+\lst@currlwidth=\dimen125
+\lst@column=\count117
+\lst@pos=\count118
+\lst@lostspace=\dimen126
+\lst@width=\dimen127
+\lst@newlines=\count119
+\lst@lineno=\count120
+\lst@maxwidth=\dimen128
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/lstmisc.sty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count121
+\lst@skipnumbers=\count122
+\lst@framebox=\box30
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/listings.cfg"
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics/color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics-cfg/color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics-def/pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)) (ECE253.aux)
 \openout1 = `ECE253.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 ("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
 graphics/graphicx.sty"
@@ -298,26 +340,47 @@ graphics-cfg/graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 13.
 
 ("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
-graphics-def/pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+hyperref/nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count123
+)
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
+ (ECE253.out) (ECE253.out)
+\@outlinefile=\write3
+\openout3 = `ECE253.out'.
+
+\c@lstlisting=\count124
 
 ("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/contex
 t/base/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen125
-\scratchbox=\box29
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen126
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks21
-)))
+\scratchcounter=\count125
+\scratchdimen=\dimen131
+\scratchbox=\box32
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen132
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks22
+)
 ("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
 oberdiek/epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -333,36 +396,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\Gin@req@height=\dimen127
-\Gin@req@width=\dimen128
-)
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 6.
-
-("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
-hyperref/nameref.sty"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
-c/oberdiek/gettitlestring.sty"
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count121
-)
-LaTeX Info: Redefining \ref on input line 6.
-LaTeX Info: Redefining \pageref on input line 6.
-LaTeX Info: Redefining \nameref on input line 6.
- (ECE253.out) (ECE253.out)
-\@outlinefile=\write3
-\openout3 = `ECE253.out'.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 
 ("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
 amsfonts/umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 ("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
 amsfonts/umsb.fd"
@@ -378,80 +418,104 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
+l.22 
       [1
 
 ]
 Chapter 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 22.
+(hyperref)                removing `math shift' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\to' on input line 22.
+(hyperref)                removing `\to' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 22.
+(hyperref)                removing `math shift' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 25.
+(hyperref)                removing `math shift' on input line 32.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\to' on input line 25.
+(hyperref)                removing `\to' on input line 32.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 25.
+(hyperref)                removing `math shift' on input line 32.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 28.
+(hyperref)                removing `math shift' on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\to' on input line 28.
+(hyperref)                removing `\to' on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 28.
+(hyperref)                removing `math shift' on input line 35.
 
 [2
 
 ] [3]
 Chapter 2.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
 [4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+base/omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+ [5]
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/lstlang1.sty"
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) [6]
+Overfull \hbox (2.9537pt too wide) in paragraph at lines 170--172
+[]\OT1/cmr/bx/n/12 Order of Operations:  \OT1/cmr/m/n/12 Basically nobody knows
+... just use parenthesis
+ []
+
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
  (ECE253.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `ECE253.out' has not changed.
-(rerunfilecheck)             Checksum: 777A905829CCFF1E39F7C46CA4BEA627;763.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+(rerunfilecheck)             Checksum: 21957983F96FB74C42F3B1E29F3527D5;1192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
  ) 
 Here is how much of TeX's memory you used:
- 6256 strings out of 494866
- 95517 string characters out of 3176398
- 182333 words of memory out of 3000000
- 9835 multiletter control sequences out of 15000+200000
- 13009 words of font info for 50 fonts, out of 3000000 for 9000
+ 8085 strings out of 494866
+ 120020 string characters out of 3176398
+ 418924 words of memory out of 3000000
+ 11569 multiletter control sequences out of 15000+200000
+ 13477 words of font info for 52 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 42i,6n,31p,314b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,6n,40p,314b,1177s stack positions out of 5000i,500n,10000p,200000b,50000s
 </Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
 e1/public/amsfonts/cm/cmbx12.pfb></Users/abhargava/Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/abhargav
-a/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts
-/cm/cmr17.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/insta
-ll/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on ECE253.pdf (5 pages, 66197 bytes).
+MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/abharga
+va/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/abhargava/Library/Applicat
+ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></U
+sers/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></Users/abhargava/Library/Application Support/MiKTeX
+/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ECE253.pdf (9 pages, 133013 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

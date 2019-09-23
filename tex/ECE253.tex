@@ -3,6 +3,13 @@
 \usepackage{amsmath,amsfonts,mathtools}
 \usepackage{hyperref}
 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
 \begin{document}
 \title{ECE253 Abridged}
 \author{Aman Bhargava}
@@ -43,5 +50,181 @@ Just go through base 2 fam.
 \section{XOR}
 
 \section{Boolean Algebra}
+Here are the axioms of Boolean Algebra:
+\begin{enumerate}
+\item $0 \cdot 0 = 0$
+\item $1 \cdot 1 = 1$
+\item $0 \cdot 1 = 1 \cdot 0 = 0$
+\item if $x = 0$, $!x = 1$
+\end{enumerate}
+
+\paragraph{Dual Form}
+\begin{enumerate}
+\item $1 + 1 = 1$
+\item $0 + 0 = 0$
+\item $1 + 0 = 0 + 1 = 1$
+\item if $x = 1$, $!x = 0$
+\end{enumerate}
+
+\paragraph{Duality: } In a given logic expression, you can swap $1 \to 0$ and $\cdot \to +$
+and the expression is still valid.
+
+\section{Useful Boolean Expression Rules}
+\begin{itemize}
+\item $x \cdot 0 = 0$
+\item $x \cdot 1 = x$
+\item $x \cdot x = x$
+\item $x \cdot !x = 0$
+\item $x \cdot 0 = 0$
+\item $!!x = x$
+\item $x + 1 = 1$
+\item $x + 0 = x$
+\item $x + x = x$
+\item $x + !x = 1$
+\end{itemize}
+
+\paragraph{Distributive Properties: }
+$$x \cdot (y + z) = xy + xz$$
+$$x + (y \cdot z) = (x+y) \cdot (x+z)$$
+
+% \section{Less Obvious Identities}
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+
+\section{NAND and NOR (TB 2.7)}
+\section{Three-Way Light Control (TB 2.8.1)}
+\section{Intro to Verilog}
+A 3-input multiplexer can be made with two 2-input multiplexers.
+Now let's implement this without using two pre-made multiplexers. Let:
+\begin{itemize}
+\item 
+\end{itemize}
+
+\paragraph{Notes on Implementation}
+\begin{itemize}
+\item If you want inputs to be registered from switches, you need to assign them SW[<int>]
+\item Likewise, if you want outputs to be registered to LED's, assign them LEDR[<int>]
+\end{itemize}
+
+\subsection{Code: 3-Way Multiplexer}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{lstlisting}
+module mux2b2to1 (SW, LEDR); //Two bit 2 to 1 multiplexer  
+   input[4:0] SW, //[4:0] sets switches 0-4 to inputs(?)
+   output[1:0] LEDR, //
+
+   wire S;
+   wire[1:0] a, b, z; //'two bit wide vector'?
+
+   assign a = SW[1:0],
+   assign b = SW[3:2],
+   assign s = SW[4],
+   assign LEDR = z,
+
+   assign z[0] = (~s&a[0]) | (s&b[0]);
+   assign z[1] = (~s & a[1]) | (s&b[1]);
+
+endmodule;
+\end{lstlisting}
+
+\paragraph{Can you make the assignment more efficient?}
+What if you do this:
+\begin{lstlisting}
+   // assign z[0] = (~s&a[0]) | (s&b[0]);
+   // assign z[1] = (~s & a[1]) | (s&b[1]);
+   assign z = (~s&a) | (s&b); // NOT CORRECT
+\end{lstlisting}
+
+\paragraph{Because $s$ is only 1-bit and $a, b$ are two bits, $s$ is extended with a \textbf{0}, 
+which makes the logic incorrect!}
+
+\paragraph{General Notes on how Syntax Works:}
+\begin{itemize}
+\item \textbf{What is 'assign'? } 'assign' just means you're making a connection (alias?) b/w the
+two. \textbf{Question: } is this necessary for instantiating the variable?
+\item \textbf{Assignment arith.} When you create a verilog wire/input with $x = [a:b]$, the number of bits in 
+$x$ is $b-a + 1$
+\item \textbf{Bit Access: } To access bits, you say $x[n]$ or $x[n:m]$ where $n < m$. The length of the slice
+is $n-m +1$
+\item \textbf{Concatenation: } If you want to stitch together multiple bits, you use $x = {SW[9:8], SW[1:0]}$. That
+statement stitches together two 2-bit chunks ($SW[9:8], SW[1:0]$ to make one 4-bit chunk).
+\item \textbf{Order of Operations: } Basically nobody knows... just use parenthesis when you're
+not sure. And goes before or, though.
+\end{itemize}
+
+
+\section{Full Adder}
+\paragraph{Description}
+\begin{itemize}
+\item What does a full adder do?
+\item How does a full adder work?
+\item What are the inputs and outputs of a full adder?
+\item What can you use full adders to make?
+\end{itemize}
+
+\paragraph{Review of Outcomes}
+\begin{itemize}
+\item $Cout = xy + CinX + CinY$
+\item $Sum = x \wedge y \wedge z$
+\end{itemize}
+
+\paragraph{Now let's make it in verilog!}
+\begin{lstlisting}
+module fulladder(x, y, Cin, S, Cout);
+   input x, y, Cin;
+   output S, Cout;
+
+   assign s = x ^ y ^ Cin;
+   assign Cout = (x&y) | (Cin&x) | (Cin&y); // Why no wires here? Bc no physical IO's.
+\end{lstlisting}
+
+\paragraph{Now we make a 3-bit adder out of full adders in Verilog!}
+\begin{lstlisting}
+module adder3bit(X, Y, S)
+   input[2:0] X, Y;
+   output[3:0] S;
+   wire[3:0] C; // to connect full adders together
+
+   fulladder U0(X[0], Y[0], C[0], C[1]);
+   fulladder U1(X[1], Y[1], C[1], C[2]);
+   fulladder U2(X[2], Y[2], C[2], C[3]);
+
+   assign S[3] = C[3]; // Final carry bit is the most significant bit of the sum.
+   assign C[0] = 1'b0; // Weird syntax: 1 bit, equal to 0.
+endmodule;
+\end{lstlisting}
+
+This is structural verilog - we can't immediately see the bigger picture. We see wires and 
+modules stitched together and we have to figure out what it all means.
+
+\paragraph{Weird constant syntax: }
+\begin{itemize}
+\item $1'b0$: 1 bit constant, in binary, equal to 0.
+\item $4'hF$: 4 bit constant, in hex, equal to F.
+\item $4'd9$: 4 bit constant, in decimal, equal to 9.
+\item $8'h1E$: 8 bit constant, in hex, equal to 1E.
+\end{itemize}
+
+
+
 
 \end{document}
