@@ -8,28 +8,41 @@
 \contentsline {section}{\numberline {2.2}And Gate}{4}{section.2.2}% 
 \contentsline {section}{\numberline {2.3}Inverter}{4}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}XOR}{4}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Boolean Algebra}{4}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Boolean Algebra}{5}{chapter.3}% 
 \contentsline {paragraph}{Dual Form}{5}{section*.2}% 
 \contentsline {paragraph}{Duality: }{5}{section*.3}% 
-\contentsline {section}{\numberline {2.6}Useful Boolean Expression Rules}{5}{section.2.6}% 
-\contentsline {paragraph}{Distributive Properties: }{5}{section*.4}% 
-\contentsline {section}{\numberline {2.7}Sum-of-Products (SOP)}{5}{section.2.7}% 
+\contentsline {section}{\numberline {3.1}Useful Boolean Expression Rules}{5}{section.3.1}% 
+\contentsline {paragraph}{Distributive Properties: }{6}{section*.4}% 
+\contentsline {section}{\numberline {3.2}Sum-of-Products (SOP)}{6}{section.3.2}% 
 \contentsline {paragraph}{Min term: }{6}{section*.5}% 
-\contentsline {section}{\numberline {2.8}Product of Sums (POS)}{6}{section.2.8}% 
+\contentsline {section}{\numberline {3.3}Product of Sums (POS)}{6}{section.3.3}% 
 \contentsline {paragraph}{Max term: }{6}{section*.6}% 
-\contentsline {section}{\numberline {2.9}NAND and NOR Logic Networks (TB 2.7)}{6}{section.2.9}% 
-\contentsline {section}{\numberline {2.10}Three-Way Light Control (TB 2.8.1)}{6}{section.2.10}% 
-\contentsline {section}{\numberline {2.11}How 2 Verilog}{6}{section.2.11}% 
-\contentsline {paragraph}{Notes on Implementation}{6}{section*.7}% 
-\contentsline {subsection}{\numberline {2.11.1}Code: 3-Way Multiplexer}{6}{subsection.2.11.1}% 
-\contentsline {paragraph}{Can you make the assignment more efficient?}{7}{section*.8}% 
-\contentsline {paragraph}{Because $s$ is only 1-bit and $a, b$ are two bits, $s$ is extended with a \textbf {0}, which makes the logic incorrect!}{7}{section*.9}% 
-\contentsline {paragraph}{General Notes on how Syntax Works:}{7}{section*.10}% 
-\contentsline {section}{\numberline {2.12}Full Adder}{8}{section.2.12}% 
-\contentsline {paragraph}{Description: }{8}{section*.11}% 
-\contentsline {paragraph}{Ripple Carry Adder: }{8}{section*.12}% 
-\contentsline {paragraph}{Specifics for Ripple Carry Adder: }{8}{section*.13}% 
-\contentsline {paragraph}{Review of Outcomes}{9}{section*.14}% 
-\contentsline {paragraph}{Now let's make it in verilog!}{9}{section*.15}% 
-\contentsline {paragraph}{Now we make a 3-bit adder out of full adders in Verilog!}{9}{section*.16}% 
-\contentsline {paragraph}{Weird constant syntax: }{10}{section*.17}% 
+\contentsline {section}{\numberline {3.4}NAND and NOR Logic Networks (TB 2.7)}{7}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Three-Way Light Control (TB 2.8.1)}{7}{section.3.5}% 
+\contentsline {chapter}{\numberline {4}How 2 Verilog}{8}{chapter.4}% 
+\contentsline {paragraph}{Notes on Implementation}{8}{section*.7}% 
+\contentsline {subsection}{\numberline {4.0.1}Code: 3-Way Multiplexer}{8}{subsection.4.0.1}% 
+\contentsline {paragraph}{Can you make the assignment more efficient?}{9}{section*.8}% 
+\contentsline {paragraph}{Because $s$ is only 1-bit and $a, b$ are two bits, $s$ is extended with a \textbf {0}, which makes the logic incorrect!}{9}{section*.9}% 
+\contentsline {paragraph}{General Notes on how Syntax Works:}{9}{section*.10}% 
+\contentsline {section}{\numberline {4.1}Full Adder}{9}{section.4.1}% 
+\contentsline {paragraph}{Description: }{9}{section*.11}% 
+\contentsline {paragraph}{Ripple Carry Adder: }{10}{section*.12}% 
+\contentsline {paragraph}{Specifics for Ripple Carry Adder: }{10}{section*.13}% 
+\contentsline {paragraph}{Review of Outcomes}{10}{section*.14}% 
+\contentsline {paragraph}{Now let's make it in verilog!}{11}{section*.15}% 
+\contentsline {paragraph}{Now we make a 3-bit adder out of full adders in Verilog!}{11}{section*.16}% 
+\contentsline {paragraph}{Weird constant syntax: }{11}{section*.17}% 
+\contentsline {section}{\numberline {4.2}7-Segment Display}{12}{section.4.2}% 
+\contentsline {paragraph}{Prompt: }{12}{section*.18}% 
+\contentsline {paragraph}{Numbering: }{12}{section*.19}% 
+\contentsline {paragraph}{Note on D1-SoC Board: }{12}{section*.20}% 
+\contentsline {subsection}{\numberline {4.2.1}Displaying Numbers}{12}{subsection.4.2.1}% 
+\contentsline {paragraph}{With active low: }{12}{section*.21}% 
+\contentsline {paragraph}{Truth Table: }{12}{section*.22}% 
+\contentsline {paragraph}{Consolidating the Logic Functions: }{12}{section*.23}% 
+\contentsline {paragraph}{Verilog Code: }{13}{section*.24}% 
+\contentsline {paragraph}{Implementation Example: }{13}{section*.25}% 
+\contentsline {paragraph}{Cool XOR Fact: }{13}{section*.26}% 
+\contentsline {section}{\numberline {4.3}FPGA's}{13}{section.4.3}% 
+\contentsline {paragraph}{How to encode any two-input thing}{14}{section*.27}% 

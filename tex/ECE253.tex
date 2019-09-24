@@ -50,7 +50,7 @@ Just go through base 2 fam.
 \section{XOR}
 
 
-\section{Boolean Algebra}
+\chapter{Boolean Algebra}
 Here are the axioms of Boolean Algebra:
 \begin{enumerate}
 \item $0 \cdot 0 = 0$
@@ -119,7 +119,7 @@ expression, you multiply (AND) the maxterms that sum to zero.
 \section{Three-Way Light Control (TB 2.8.1)}
 
 
-\section{How 2 Verilog}
+\chapter{How 2 Verilog}
 A 3-input multiplexer can be made with two 2-input multiplexers.
 Now let's implement this without using two pre-made multiplexers. Let:
 \begin{itemize}
@@ -288,7 +288,95 @@ modules stitched together and we have to figure out what it all means.
 \item $8'h1E$: 8 bit constant, in hex, equal to 1E.
 \end{itemize}
 
+\section{7-Segment Display}
+\paragraph{Prompt: } Design a c ircuit with two inputs $x_1$ and $x_0$ representing a 
+2-bit number $x$. Show $x$ on the 7-segment display (ranges from 0-3 inclusive).
 
+\paragraph{Numbering: } $h_0$ is the top segment. Clockwise increases. $h_6$ is the middle one.
 
+\paragraph{Note on D1-SoC Board: } Logic 0 makes the light turn on for $h_{0-6}$ and 1 makes 
+it turn off ('active low')
+
+\subsection{Displaying Numbers}
+Sections to light up for 0: $h_{0-5}$
+Sections to light up for 1: $h_{1-2}$
+Sections to light up for 2: $h_{0-1}, h_6, h_{3-4}$
+Sections to light up for 3: $h_{0-3}, h_6$
+
+\paragraph{With active low: }
+Sections to power for 0: $h_{6}$
+Sections to power for 1: $h_{0}, h_{3-6}$
+Sections to power for 2: $.$
+Sections to power for 3: 
+
+\paragraph{Truth Table: }
+\begin{tabular}{ll|lllllll}
+$x_1$ & $x_2$ & $h_6$ & $h_5$ & $h_4$ & $h_3$ & $h_2$ & $h_1$ & $h_0$  \\
+\hline
+0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0  \\
+0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 1  \\
+1 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0  \\
+1 & 1 & 0 & 1 & 1 & 0 & 0 & 0 & 0  \\
+\end{tabular}
+
+\paragraph{Consolidating the Logic Functions: }
+$$h_0 = (!x_1) \cdot x_0$$
+$$h_1 = 0$$
+$$h_2 = x_1 \cdot !x_0$$
+$$h_3 = !x_1 \cdot x_0$$
+$$h_4 = x_0$$
+$$h_5 = x_1 | x_0$$
+$$h_6 = !x_1$$
+
+\paragraph{Verilog Code: }
+\begin{lstlisting}
+module seg7(SW, HEX0)
+   input[1:0] X;
+   output[6:0] HEX0;
+   
+   assign HEX0[0] = ~SW[1] & SW[0];
+   // etc.
+
+endmodule
+\end{lstlisting}
+
+\paragraph{Implementation Example: }
+Designa  circuit with 4 inputs $a, b, c, d$ and $s$. 
+   if s = 0, show $a+b$ on 7-seg display
+   if s = 1, show $c+d$ on 7-seg display
+
+$${a, b} \to mux_{2 bit * 2 inputs} \to fulladd_{cin = 0} \to HEXO \to output$$
+
+\begin{itemize}
+\item The carry in digit to the full adder is 0
+\item The carry out from the full adder is the most significant digit of the HEXO input.
+\item Honestly you could just use a half adder because you don't need a carry-in. 
+$C_{out} = xy$, $Sum = x \oplus y$
+\end{itemize}
+
+\paragraph{Cool XOR Fact: } $\oplus$ returns 1 if the number of true inputs is ODD.
+
+\section{FPGA's}
+Can do anything.
+\begin{itemize}
+\item Field programmable gate arrays: Programmable in the field (i.e. not in the factory necessarily).
+\item 2-D array of programmable blocks.
+\item Blocks contain lookup tables (LUT)
+\item Any two input LUT can be programmed for any two-input logic functions.
+\item More complex logic comes out when you connect the LUTS - this is what Quartus does.
+\end{itemize}
+
+\paragraph{How to encode any two-input thing}
+Let there be 4 sRAM bits $p, q, r, s$. Let the inputs be $a, b$. 
+
+$${p, q} \to mux_{a1} \to x$$
+$${r, s} \to mux_{a1} \to y$$
+Where $x, y$ are itermediate variables.
+
+$${x, y} \to mux_{b} \to output$$
+
+Therefore it takes 4 ram cells for a 2-input LUT. $$n_{ramcells} = 2^{inputs}$$
+
+There are 85,000 6-LUTS on lab chips.
 
 \end{document}
