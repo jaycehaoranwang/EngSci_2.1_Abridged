@@ -10,8 +10,10 @@
 \BOOKMARK [1][-]{section.2.4}{XOR}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.5}{Boolean Algebra}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.6}{Useful Boolean Expression Rules}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.7}{NAND and NOR \(TB 2.7\)}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.8}{Three-Way Light Control \(TB 2.8.1\)}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.9}{Intro to Verilog}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.9.1}{Code: 3-Way Multiplexer}{section.2.9}% 16
-\BOOKMARK [1][-]{section.2.10}{Full Adder}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.7}{Sum-of-Products \(SOP\)}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.8}{Product of Sums \(POS\)}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.9}{NAND and NOR Logic Networks \(TB 2.7\)}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.10}{Three-Way Light Control \(TB 2.8.1\)}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.11}{How 2 Verilog}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.11.1}{Code: 3-Way Multiplexer}{section.2.11}% 18
+\BOOKMARK [1][-]{section.2.12}{Full Adder}{chapter.2}% 19

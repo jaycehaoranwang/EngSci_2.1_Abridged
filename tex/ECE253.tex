@@ -49,6 +49,7 @@ Just go through base 2 fam.
 
 \section{XOR}
 
+
 \section{Boolean Algebra}
 Here are the axioms of Boolean Algebra:
 \begin{enumerate}
@@ -93,9 +94,32 @@ $$x + (y \cdot z) = (x+y) \cdot (x+z)$$
 % \end{itemize}
 
 
-\section{NAND and NOR (TB 2.7)}
+\section{Sum-of-Products (SOP)}
+'Sum' means boolean OR while 'product' means boolean AND. 
+
+\paragraph{Min term: } for $n$ variables, term where all variables appear once is a 'minterm'.
+Note that variables can either be complimented or uncomplimented. 
+
+Any boolean function can be represented by the sum of products of minterms - this is just done 
+by simply converting the truth table and OR-ing each truth. 
+
+Then, you can simplify. Pretty common sense. 'Canonical' just means it's a bunch of midterms
+separated by OR's.
+
+\section{Product of Sums (POS)}
+\paragraph{Max term: } where all $n$ variables appear OR-d. They can be complimented or
+un-complimented. 
+
+You can pretty easily make all the valid max terms from a truth table. To generate a POS
+expression, you multiply (AND) the maxterms that sum to zero. 
+
+\section{NAND and NOR Logic Networks (TB 2.7)}
+
+
 \section{Three-Way Light Control (TB 2.8.1)}
-\section{Intro to Verilog}
+
+
+\section{How 2 Verilog}
 A 3-input multiplexer can be made with two 2-input multiplexers.
 Now let's implement this without using two pre-made multiplexers. Let:
 \begin{itemize}
@@ -111,7 +135,7 @@ Now let's implement this without using two pre-made multiplexers. Let:
 \subsection{Code: 3-Way Multiplexer}
 
 \lstset{frame=tb,
-  language=Java,
+  language=Verilog,
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
@@ -173,18 +197,58 @@ not sure. And goes before or, though.
 
 
 \section{Full Adder}
-\paragraph{Description}
+\paragraph{Description: }
+Adding in binary is the same as in decimal, just with fewer options. When adding two single bits,
+we have three output possibilities: $00, 01, 10$. We call the least significant bit the sum $s$ and
+the most significant digit the carry $c$.
+
+Let's see the truth table:
+\begin{tabular}{ll|ll}
+$x$ & $y$ & $C$ & $s$ \\
+\hline
+0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 \\
+1 & 0 & 0 & 1 \\
+1 & 1 & 1 & 0 \\
+\end{tabular}
+
+As you can see, the sum bit is just $x \oplus y$ and the carry bit is $xy$. 
+This is a \textbf{half adder} because it doesn't accept a carry from the last calculation.
+
+A full adder accepts a carry in $C_{in}$, $x$, and $y$, and outputs sum $s$ and carry out $C_{out}$.
+
+Let's see the truth table:
+\begin{tabular}{lll|ll}
+$x$ & $y$ & $C_{in}$ & $C_{out}$ & $s$ \\
+\hline
+0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 1 \\
+0 & 1 & 0 & 0 & 1 \\
+0 & 1 & 1 & 1 & 0 \\
+1 & 0 & 0 & 0 & 1 \\
+1 & 0 & 1 & 1 & 0 \\
+1 & 1 & 0 & 1 & 0 \\
+1 & 1 & 1 & 1 & 1 \\
+\end{tabular}
+
+Therefore $$C_{out} = xy + xC_{in} + yC_{in}$$
+and $$s = x \oplus y \oplus C_{in}$$
+
+\paragraph{Ripple Carry Adder: } Then you can string them together by assigning one of these 
+adders to each bit of the output and passing the carry out to the carry in of the next bit!
+
+\paragraph{Specifics for Ripple Carry Adder: }
 \begin{itemize}
-\item What does a full adder do?
-\item How does a full adder work?
-\item What are the inputs and outputs of a full adder?
-\item What can you use full adders to make?
+\item Max size for output is one more then the two input's sizes because one more order of 
+magnitude in binary is just doubling the number, and the most you can do when adding two 
+numbers of equal length is double them.
+\item Basically just string them together and you're golden.
 \end{itemize}
 
 \paragraph{Review of Outcomes}
 \begin{itemize}
 \item $Cout = xy + CinX + CinY$
-\item $Sum = x \wedge y \wedge z$
+\item $Sum = x \oplus y \oplus z$
 \end{itemize}
 
 \paragraph{Now let's make it in verilog!}
