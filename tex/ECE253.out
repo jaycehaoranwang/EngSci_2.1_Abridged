@@ -20,3 +20,8 @@
 \BOOKMARK [1][-]{section.4.2}{7-Segment Display}{chapter.4}% 20
 \BOOKMARK [2][-]{subsection.4.2.1}{Displaying Numbers}{section.4.2}% 21
 \BOOKMARK [1][-]{section.4.3}{FPGA's}{chapter.4}% 22
+\BOOKMARK [0][-]{chapter.5}{Karnaugh Maps}{}% 23
+\BOOKMARK [1][-]{section.5.1}{Motivation}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{Review of Terminology}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{Procedure for Minimum Cost Cover}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.4}{5 Variable Karnaugh Map}{chapter.5}% 27

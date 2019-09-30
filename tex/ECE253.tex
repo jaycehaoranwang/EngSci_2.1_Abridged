@@ -363,7 +363,7 @@ Can do anything.
 \item 2-D array of programmable blocks.
 \item Blocks contain lookup tables (LUT)
 \item Any two input LUT can be programmed for any two-input logic functions.
-\item More complex logic comes out when you connect the LUTS - this is what Quartus does.
+\item More complex logic comes out when you connect the LUTS - this is what Quartus does. 
 \end{itemize}
 
 \paragraph{How to encode any two-input thing}
@@ -378,5 +378,71 @@ $${x, y} \to mux_{b} \to output$$
 Therefore it takes 4 ram cells for a 2-input LUT. $$n_{ramcells} = 2^{inputs}$$
 
 There are 85,000 6-LUTS on lab chips.
+
+\chapter{Karnaugh Maps}
+\section{Motivation}
+Creating boolean functions to get what you need done is confusing and unlikely to lead to an optimal solution 
+when there are many variables.
+
+Karnaugh maps are a tool for expressing your truth tables in such a way that makes getting optimal solutions easier
+with many variables.
+
+\paragraph{Example 2x2 Karnaugh Map}
+\begin{tabular}{l|cc}
+& $0$ & $1$ \\
+\hline
+0 & a & b \\
+1 & c & d \\
+\end{tabular}
+
+
+\section{Review of Terminology}
+
+\begin{itemize}
+\item \textbf{Implicant:} Any product term for which the function is true (think 'implies' logic is 1)
+\item \textbf{Cover:} A set of implicants that covers all 1's of the function.
+\item \textbf{Prime implicant:} Any implicant that, if we delete a literal, is no longer an implicant (largest
+   groups of ones in the K-map)
+\item \textbf{Essential prime implicant:} Prime implicant that covers a 1 covered by no other prime implicant.
+\item \textbf{Min-cost cover:}
+\item \textbf{Cost:}
+\end{itemize}
+
+\paragraph{Example: }
+\begin{tabular}{l|cccc}
+& $00$ & $01$ & $11$ & $10$   \\
+\hline
+0 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 \\
+\end{tabular}
+
+Let the left column be the $z$ column and the top be products of $x, y$. 
+
+List of implicants:
+\begin{enumerate}
+\item $\bar{z}$ 
+\item $\bar{x} \bar{y}$
+\item $\bar{x} \bar{z}$
+\item $y\bar{z}$
+\item $x\bar{z}$
+\item $\bar{y}\bar{z}$
+\item $m_{0, 1, 2, 4, 5}$
+\end{enumerate}
+
+Prime Implicants: Largest group of ones in cardinal maps...
+
+\paragraph{Cost Defininition: } $n_{gates} + n_{inputs}$
+
+\section{Procedure for Minimum Cost Cover}
+\begin{itemize}
+\item Find essential prime implicants and include in cover
+\item Select additional prime implicants to include in the cover until all 1's are covered.
+\end{itemize}
+
+\section{5 Variable Karnaugh Map}
+Use two 4-variable K-Maps. One for case where $x_5 = 0$, other for $x_5 = 1$.
+Min-term indexing goes by the binary representation of $x_{0-n}$ where $x_n$ is the LEAST significant bit.
+
+
 
 \end{document}

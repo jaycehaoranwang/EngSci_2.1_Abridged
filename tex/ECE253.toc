@@ -46,3 +46,11 @@
 \contentsline {paragraph}{Cool XOR Fact: }{13}{section*.26}% 
 \contentsline {section}{\numberline {4.3}FPGA's}{13}{section.4.3}% 
 \contentsline {paragraph}{How to encode any two-input thing}{14}{section*.27}% 
+\contentsline {chapter}{\numberline {5}Karnaugh Maps}{15}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Motivation}{15}{section.5.1}% 
+\contentsline {paragraph}{Example 2x2 Karnaugh Map}{15}{section*.28}% 
+\contentsline {section}{\numberline {5.2}Review of Terminology}{15}{section.5.2}% 
+\contentsline {paragraph}{Example: }{16}{section*.29}% 
+\contentsline {paragraph}{Cost Defininition: }{16}{section*.30}% 
+\contentsline {section}{\numberline {5.3}Procedure for Minimum Cost Cover}{16}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}5 Variable Karnaugh Map}{16}{section.5.4}% 
