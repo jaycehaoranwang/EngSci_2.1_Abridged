@@ -196,6 +196,110 @@ Then:
 $$\iint_D f(r, \theta) = \int_{\alpha}^{\beta} \int_{h(\theta)}^{h(\theta)} f(r, \theta)*r \, dr \, d\theta$$
 
 \section{Applications of Multiple Integrals}
+The obvious application of multiple integrals is to compute volume. But, like with regular 
+integrals, there are a lot more ways you can apply them (think back to centre of mass, 
+arc length, etc). 
 
+\subsection{Density and Mass}
+\paragraph{Lamina } is a plan of mass and surface density. With double integrals, 
+we can now calculate mass of a lamina with \textbf{variable} density!
+
+$$\rho(x, y) = \lim \frac{\Delta m}{\Delta A}$$
+$$\rho(x, y) = \frac{\partial m}{dx dy}$$
+
+\paragraph{Calculating Mass: }
+$$m = \iint_D \rho(x, y) dA$$
+
+\subsection{Moments of Intertia}
+
+\paragraph{Moment $M_x$} is the distance of the centre of mass from the $x$-axis times 
+the mass. Likewise with $y$.
+
+\paragraph{Centre of Mass } is at $(\bar{x}, \bar{y})$ where $m\bar{x} = M_y$ and 
+$m\bar{y} = M_x$.
+
+If you're confused as to why the $\bar{x}$ and $M_y$ are related, just remember that 
+the moment about the $y$-axis ($M_y$) is defined as the \textbf{distance from the 
+y-axis to the centre of mass} times the mass of the lamina. That distance is the $\bar{x}$ 
+value!
+
+\subsection{Moments of Intertia}
+
+Recall that $I = mr^2$ for particles.
+
+$$I_x = \iint_D y^2 \rho(x, y)dA$$
+$$I_y = \iint_D x^2 \rho(x, y)dA$$
+
+$$I_o = I_x + I_y = \iint_D (x^2 + y^2) \rho(x, y)dA$$
+Makes sense because $x^2+y^2$ is the distance of the chunk from the 
+origin. 
+
+\subsubsection{Radius of Gyration}
+\paragraph{About Arbitrary Axis: } $R$ is the radius of gyration if $mR^2 = I$. Basically, if mass were concentrated at $R$,
+then it would have the same moment of inertia as the original lamina.
+
+\paragraph{About the Origin: } $(\bar{\bar{x}}, \bar{\bar{y}})$ is the point of gyration about the origin.
+
+\subsection{Probability}
+The probability function of a random variable $x$ is: 
+$$f(x) > 0\,\forall \, x, \int_{-\infty}^{\infty} f(x) dx = 1$$
+
+\paragraph{Probability of $a < x < b$: } $\int_a^b f(x) dx$
+
+\paragraph{2-D Probability Function: } Chance of $(x, y) \in D$ is $\iint_D f(x, y) dA$.
+
+Note that $\iint_{\mathbb{R}^2} f(x, y) dA = 1$
+
+\subsubsection{Expected Values}
+For single variable $x$ with probability density function $f$, the expected value is the 
+average value of $x$ across many trials. 
+
+$$\mu = \int_{-\infty}^{\infty} x f(x) dx$$
+
+Makes sense because you're just summing the products of the chance of a particular $x$ 
+and the value of that $x$ for all $x$.
+
+\paragraph{Multi-Variable Functions: }
+$$\mu_1 = X_{mean} = \iint_{\mathbb{R}^2} x f(x, y) dA$$
+$$\mu_2 = Y_{mean} = \iint_{\mathbb{R}^2} y f(x, y) dA$$
+
+\paragraph{Normal Distribution: } $$f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-(x-\mu )^2/(2\sigma^2)}$$
+
+\section{Surface Area}
+
+\paragraph{How it's derived: } If you divide the surface in to an $m$ by $n$ grid, the 
+surface area of each piece is the area of that parallelogram. That can be found by 
+the cross product of the two vectors that define two sides of the parallelogram. Those 
+vectors are just the width and length of the piece times the partial derivatives along 
+that particular axis. 
+
+$$A(S) = \iint_D \sqrt{(\frac{\partial f}{\partial x})^2 
+                     + (\frac{\partial f}{\partial y})^2 + 1} dA$$
+
+$$A(S) = \iint_D \sqrt{(\nabla f(x, y))^2 + 1} dA$$
+
+The $+ 1$ term is there because it's $\frac{\partial f}{\partial f}$.
+
+\section{Triple Integrals}
+\subsection{Type 1}
+Lies between continuous functions of $f(x, y)$
+
+$$E = {(x, y, z) | (x, y) \in D, u_1(x, y) \leq z \leq u_2(x, y) }$$
+
+Then $$\iiint_E f(x, y, z) dV = \iint_D [\int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z) dz] dA$$
+
+\subsection{Type 2}
+Lies between continuous functions of $f(y, z)$
+
+$$E = {(x, y, z) | (y, z) \in D, u_1(y, z) \leq x \leq u_2(y, z) }$$
+
+Then $$\iiint_E f(x, y, z) dV = \iint_D [\int_{u_1(y, z)}^{u_2(y, z)} f(x, y, z) dx] dA$$
+
+
+\subsection{Type 3}
+Lies between continuous functions of $f(x, z)$
+$$E = {(x, y, z) | (x, z) \in D, u_1(x, z) \leq y \leq u_2(x, z) }$$
+
+Then $$\iiint_E f(x, y, z) dV = \iint_D [\int_{u_1(x, z)}^{u_2(x, z)} f(x, y, z) dy] dA$$
 
 \end{document}

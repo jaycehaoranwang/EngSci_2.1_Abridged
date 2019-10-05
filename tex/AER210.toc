@@ -39,3 +39,25 @@
 \contentsline {subsection}{\numberline {3.3.1}Change to Polar Coordinates in Double Integrals}{10}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Variable Bounds of Integration for $r$}{11}{subsection.3.3.2}% 
 \contentsline {section}{\numberline {3.4}Applications of Multiple Integrals}{11}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Density and Mass}{11}{subsection.3.4.1}% 
+\contentsline {paragraph}{Lamina }{11}{section*.14}% 
+\contentsline {paragraph}{Calculating Mass: }{11}{section*.15}% 
+\contentsline {subsection}{\numberline {3.4.2}Moments of Intertia}{11}{subsection.3.4.2}% 
+\contentsline {paragraph}{Moment $M_x$}{11}{section*.16}% 
+\contentsline {paragraph}{Centre of Mass }{11}{section*.17}% 
+\contentsline {subsection}{\numberline {3.4.3}Moments of Intertia}{12}{subsection.3.4.3}% 
+\contentsline {subsubsection}{Radius of Gyration}{12}{section*.18}% 
+\contentsline {paragraph}{About Arbitrary Axis: }{12}{section*.19}% 
+\contentsline {paragraph}{About the Origin: }{12}{section*.20}% 
+\contentsline {subsection}{\numberline {3.4.4}Probability}{12}{subsection.3.4.4}% 
+\contentsline {paragraph}{Probability of $a < x < b$: }{12}{section*.21}% 
+\contentsline {paragraph}{2-D Probability Function: }{12}{section*.22}% 
+\contentsline {subsubsection}{Expected Values}{12}{section*.23}% 
+\contentsline {paragraph}{Multi-Variable Functions: }{13}{section*.24}% 
+\contentsline {paragraph}{Normal Distribution: }{13}{section*.25}% 
+\contentsline {section}{\numberline {3.5}Surface Area}{13}{section.3.5}% 
+\contentsline {paragraph}{How it's derived: }{13}{section*.26}% 
+\contentsline {section}{\numberline {3.6}Triple Integrals}{13}{section.3.6}% 
+\contentsline {subsection}{\numberline {3.6.1}Type 1}{13}{subsection.3.6.1}% 
+\contentsline {subsection}{\numberline {3.6.2}Type 2}{14}{subsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6.3}Type 3}{14}{subsection.3.6.3}% 
