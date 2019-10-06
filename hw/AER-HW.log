@@ -1,0 +1,291 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  6 OCT 2019 02:51
+entering extended mode
+**./AER-HW.tex
+(AER-HW.tex
+LaTeX2e <2018-12-01>
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+base/article.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+base/size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics/color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics-cfg/color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics-def/pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics/graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics/keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics/graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics/trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+graphics-cfg/graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/listings.sty"
+\lst@mode=\count88
+\lst@gtempboxa=\box27
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen105
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen108
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/lstmisc.sty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box28
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+listings/listings.cfg"
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+amsmath/amsmath.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+amsmath/amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+amsmath/amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen109
+))
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+amsmath/amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen110
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+amsmath/amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks17
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks18
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (AER-HW.aux)
+\openout1 = `AER-HW.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/contex
+t/base/supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen118
+\scratchbox=\box31
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen119
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks22
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+oberdiek/epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+oberdiek/grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+oberdiek/kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/generi
+c/oberdiek/ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@lstlisting=\count114
+ [1
+
+{/Users/abhargava/Library/Application Support/MiKTeX/texmfs/data/pdftex/config/
+pdftex.map}] [2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 
+     
+? X
+ 
+Here is how much of TeX's memory you used:
+ 3428 strings out of 494866
+ 49643 string characters out of 3176398
+ 111213 words of memory out of 3000000
+ 7058 multiletter control sequences out of 15000+200000
+ 9626 words of font info for 35 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 41i,6n,32p,275b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+</Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></Users/abhargava/Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/abhargava
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/abhargava/Library/Applicati
+on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Use
+rs/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb></Users/abhargava/Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/abhargava/Library
+/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Application Suppor
+t/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on AER-HW.pdf (2 pages, 105563 bytes).
+PDF statistics:
+ 49 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

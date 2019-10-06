@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{amsmath}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\begin{document}
+
+\title{AER210 Homework Problems}
+\author{Aman Bhargava}
+\date{\today}
+\maketitle
+
+\section{What is this?}
+I am slightly faster at writing LaTeX equations than writing by hand. I hope to get even faster 
+and practice math even better by keeping a running formatted document of my homework problems here.
+
+\section{Pre-Midterm 1 Practice }
+\section{Applications of Double Integrals}
+From section 15.4 in Stewart Calculus.
+
+\paragraph{15.4.7: } Find $\bar{x}, \bar{y}$ and mass for $D$, bounded by $y = 1-x^2$ and $y = 0$. $\rho(x, y) = ky$
+
+Finding mass: 
+
+$$m = \int_{-1}^{1} \int_{0}^{1-x^2} ky \, dy dx $$
+$$m = \int_{-1}^{1} \frac{k}{2}(1-x^2)^2 dx$$
+$$m = \frac{k}{2} \int_{-1}^{1} (1-2x^2+x^4) dx$$
+$$m = \frac{k}{2} [x - \frac{2}{3} x^3 + \frac{1}{5}x^5]_{-1 \to 1}$$
+$$m = \frac{k}{2} [16/15] $$
+$$m = k \frac{8}{15}$$
+
+Finding $M_y$: 
+$$M_y = \iint_D x\rho(x, y) dA$$
+$$= \int_{-1}^{1} \int_0^{1-x^2} kxy dy dx$$
+$$= ... \frac{kx}{2}[y^2]_{0 \to 1-x^2} $$
+$$ = ... \frac{k}{2}[x(1-x^2)^2]$$
+$$ = \int_{-1}^{1} k/2 (x-2x^3 + x^5) dx $$
+$$ = k/2 [x^2/2 - 2/4 x^4 + x^6/6]_{(-1 \to 1)}$$
+$$ = k/2 [1/2 - 1/2 + 1/6]-[1/2 -1/2 + 1/6] $$
+$$M_y = 0$$
+
+Finding $M_x$
+$$M_x = \iint_D y\rho(x, y) dA$$
+$$ = \int_{-1}^{1} \int_0^{1-x^2} ky^2 \, dy dx$$
+$$ = \int_{-1}^{1}  [ky^3/3]_{0 \to 1-x^2} dx$$
+$$ = \int_{-1}^{1}  k/3[(1-x^2)^3]_{0 \to 1-x^2} dx$$
+$$ = k/3 \int_{-1}^{1} (1 - 2x^2 + x^4)(1-x^2) dx $$
+$$ = k/3 \int_{-1}^{1} [1 - x^2 -2x^2 + 2x^3 + x^4 - x^6] dx $$
+$$ = k/3 \int_{-1}^{1} [1 - 3x^2 + 2x^3 + x^4 - x^6] dx $$
+$$ = k/3 [x - x^3 + x^4/2 + x^5/5 - x^7/7]_{-1 \to 1}$$
+$$ = k/3 ([1 - 1 + 1/2 + 1/5 - 1/7] - [-1 +1 + 1/2 -1/5 + 1/7])$$
+$$ = k/3 (1 - 1 + 1/2 + 1/5 - 1/7 + 1 - 1 - 1/2 + 1/5 - 1/7)$$
+$$ = k/3 (1/5 - 1/7 + 1/5 - 1/7)$$
+$$ = k/3 (14/35 - 10/35)$$
+$$M_x = 4k/105$$
+
+
+\paragraph{15.4.9: } D is bounded by $y = e^{-x}$, $y = 0$, $x = 0$, $x = 1$, and $\rho(x, y) = xy$
+First, we find the mass: 
+$$m = \int_0^1 \int_0^{e^{-x}} xy \, dy dx $$
+$$m = \int_0^1 [xy^2/2]_{(0 \to e^{-x})} \, dx $$
+$$m = \int_0^1 x/2[e^{-2x}] \, dx $$
+
+We let $x dx$ = $dv$ and $e^{2x}$ = $u$. $\int u \, dv = uv - \int v \, du$. $v = x^2/2$. 
+
+$$m = e^{2x}x^2/2
+
+\end{document}
