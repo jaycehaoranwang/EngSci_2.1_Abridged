@@ -25,3 +25,23 @@
 \BOOKMARK [1][-]{section.5.2}{Review of Terminology}{chapter.5}% 25
 \BOOKMARK [1][-]{section.5.3}{Procedure for Minimum Cost Cover}{chapter.5}% 26
 \BOOKMARK [1][-]{section.5.4}{5 Variable Karnaugh Map}{chapter.5}% 27
+\BOOKMARK [0][-]{chapter.6}{Storage Elements}{}% 28
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.2}{RS Latches}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.2.1}{Behavior}{section.6.2}% 31
+\BOOKMARK [1][-]{section.6.3}{Gated RS Latch}{chapter.6}% 32
+\BOOKMARK [2][-]{subsection.6.3.1}{Synchronous Reset}{section.6.3}% 33
+\BOOKMARK [2][-]{subsection.6.3.2}{Behavior}{section.6.3}% 34
+\BOOKMARK [1][-]{section.6.4}{Gated D Latch}{chapter.6}% 35
+\BOOKMARK [2][-]{subsection.6.4.1}{Behavior: }{section.6.4}% 36
+\BOOKMARK [1][-]{section.6.5}{D Flip-Flops}{chapter.6}% 37
+\BOOKMARK [2][-]{subsection.6.5.1}{Master-Slave Flip Flop}{section.6.5}% 38
+\BOOKMARK [2][-]{subsection.6.5.2}{Behavior}{section.6.5}% 39
+\BOOKMARK [2][-]{subsection.6.5.3}{Why it's Useful}{section.6.5}% 40
+\BOOKMARK [1][-]{section.6.6}{T Flip-Flop}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.7}{Flip-Flop Reset/Preset}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.8}{Summary of Objects}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.9}{Verilog Implementations}{chapter.6}% 44
+\BOOKMARK [2][-]{subsection.6.9.1}{Gated D-Latch}{section.6.9}% 45
+\BOOKMARK [2][-]{subsection.6.9.2}{Edge-Triggered Flip Flop}{section.6.9}% 46
+\BOOKMARK [2][-]{subsection.6.9.3}{Synchronous Reset \(Active Low\)}{section.6.9}% 47
