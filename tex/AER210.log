@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  6 OCT 2019 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  6 OCT 2019 21:09
 entering extended mode
 **./AER210.tex
 (AER210.tex
@@ -441,21 +441,21 @@ mm/m/it/12 I$\OT1/cmr/m/n/12 . Basically,
  []
 
 [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
  [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (AER210.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `AER210.out' has not changed.
-(rerunfilecheck)             Checksum: 4E30F25A99CE5BF8D90654DE44AF1940;2807.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
+(rerunfilecheck)             Checksum: A49F56DC16D5EB6F7CC367380882D3A4;2893.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 6372 strings out of 494866
- 97104 string characters out of 3176398
+ 6377 strings out of 494866
+ 97171 string characters out of 3176398
  186333 words of memory out of 3000000
- 9876 multiletter control sequences out of 15000+200000
+ 9877 multiletter control sequences out of 15000+200000
  13009 words of font info for 50 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  42i,11n,31p,249b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -476,9 +476,9 @@ rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/abha
 rgava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/i
 nstall/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on AER210.pdf (15 pages, 190476 bytes).
+Output written on AER210.pdf (15 pages, 192049 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 375 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 
