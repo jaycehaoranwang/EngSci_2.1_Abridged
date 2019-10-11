@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{report}
 
 \usepackage{amsmath,amsfonts,mathtools}
+\usepackage{amsbsy}
 \usepackage{hyperref}
 
 \begin{document}
@@ -22,8 +23,12 @@ as a really good cheat sheet.
 \chapter{Qualitative Things and Definitions}
 \section{Definitions}
 \begin{enumerate}
-\item Order:
-\item Autonomous:
+\item \textbf{Differential Equation: } Any equation that contains a differential of dependent variable(s) with respect to any independent variable(s)
+\item \textbf{Order: } The order of the highest derivative present.
+\item \textbf{Autonomous: } When the definition of the $\frac{dy}{dt}$ doesn't contain $t$
+\item \textbf{ODE and PDE: } Ordinary derivatives or partial derivatives. 
+\item \textbf{Linear Differential Equations: } $n$th order Linear ODE is of the form: $$\sum a_i(t)y^{(i)} = 0$$
+\item \textbf{Homogenous: } if the $0$th element of the above sum has $a_0(t) = 0$ for all $t$. 
 \end{enumerate}
 
 
@@ -65,7 +70,32 @@ then $\exists$ a function $f$ satistfying $$f_x(x, y) = M(x, y); f_y(x, y) = N(x
 \paragraph{The solution: } $f(x, y) = C$ where $C$ is an arbitrary constant.
 
 \chapter{Systems of Two 1st Order DE's}
+\section{Set Up}
+Your first goal is to get the system in the form $$\frac{d \pmb{u}}{dt} = \pmb{Ku + b}$$
+Where $\pmb{K}$ is a 2 by 2 matrix, $\pmb{u}$ is your vector of values you want to 
+predict, and $\pmb{b}$ is a $2$-long vector of constants.
 
+\paragraph{More generally, } the equation is of the type 
+$$\frac{d\pmb{x}}{dt} = \pmb{P}(t)x + \pmb{g}(t)$$
+
+Called a \textbf{first order linear system of two dimensions}. If $\pmb{g}(t) = \pmb{0} \forall t$ 
+then it is called \textbf{homogenous}, else \textbf{non-homogenous}. We let $x$ be composed
+of values $$\pmb{x} = \begin{bmatrix}
+                           x \\
+                           y \\
+                      \end{bmatrix}$$
+
+\section{Existence and Uniqueness of Solutions}
+\paragraph{Theorem: } $\exists$ unique solution to $$\frac{d\pmb{x}}{dt} = \pmb{P}(t)x + \pmb{g}(t)$$ 
+so long as the functions $\pmb{P}(t)$ exist and are continuous on the interval $I$ in equestion.
+
+\subsection{Linear Autonomous Systems}
+If the right side doesn't depend on $t$, it's autonomous. In this case, the autonomous 
+version looks (familiarly) like: $$\frac{d\pmb{x}}{dt} = \pmb{A}x + \pmb{b}$$
+
+\paragraph{Equilibrium points} arise when $\pmb{A}x = -\pmb{b}$
+
+\section{Solving}
 
 
 
