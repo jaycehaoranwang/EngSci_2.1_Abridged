@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 OCT 2019 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 OCT 2019 18:16
 entering extended mode
 **./MAT292.tex
 (MAT292.tex
@@ -402,24 +402,24 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Chapter 3.
 [7
 
-] [8]
+] [8] [9]
 Chapter 4.
-[9
+[10
 
-] [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
  (MAT292.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
 Package rerunfilecheck Info: File `MAT292.out' has not changed.
 (rerunfilecheck)             Checksum: 5A9AAC63BA6114E071F85F9879E49DEC;1727.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 6327 strings out of 494866
- 96438 string characters out of 3176398
+ 6331 strings out of 494866
+ 96478 string characters out of 3176398
  185333 words of memory out of 3000000
  9863 multiletter control sequences out of 15000+200000
  13009 words of font info for 50 fonts, out of 3000000 for 9000
@@ -442,9 +442,9 @@ l/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/abhargava/Library/Application
 abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Application Support/MiKTeX/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on MAT292.pdf (12 pages, 169320 bytes).
+Output written on MAT292.pdf (13 pages, 173356 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -113,8 +113,31 @@ version looks (familiarly) like: $$\frac{d\pmb{x}}{dt} = \pmb{A}x + \pmb{b}$$
 \section{Solving}
 \subsection{General Solution}
 We start with $y' = \pmb{A}y+b$
-\paragraph{Converting to homogenous equation: } 
+\begin{itemize}
+\item Find eigen values $\lambda$ s.t. $det(A-I\lambda) = 0$
+\item Find eigen vectors $v$ s.t. $(A-I\lambda)v = 0$
+\item Enter and simplify $y(t) = C_1 v_1 e^{\lambda_1 t} + C_2 v_2 e^{\lambda_2 t}$
+\end{itemize}
+\paragraph{Converting to homogenous equation: } Let $y_{eq}$ be the equilibrium value of $y$ that 
+can be found when $y' = 0 = Ay + b$. 
+$$y_{eq} + \bar{y} = y$$ and $y_{eq}$ is the solution to $\bar{y}' = A\bar{y}$.
+
+
 \subsection{Special Case 1: Repeated Eigen Value}
+Start in the same fashion as above. You will easily be able to find the eigen value and 
+at least one eigen vector. Then, the path diverges:
+
+\paragraph{Case 1: Another can easily be found - } Now you find your $v_2$ and proceed.
+
+\paragraph{Case 2: Another cannot easily be found - } You must use the following formula 
+to find your second vector if this is the case:
+$$(A-I\lambda)v_2 = v_1$$
+This is known as the "general" eigen vector.
+
+\subsubsection{Final Form}
+Your final form for this case is going to be rather different than the others:
+$$x = C_1e^{\lambda_1 t}tv_1 + C_2e^{\lambda_2 t}v_2$$
+
 \subsection{Special Case 2: Two Complex Eigen Values}
 
 \chapter{Numerical Methods}

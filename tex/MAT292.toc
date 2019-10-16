@@ -22,15 +22,18 @@
 \contentsline {subsection}{\numberline {3.3.1}General Solution}{8}{subsection.3.3.1}% 
 \contentsline {paragraph}{Converting to homogenous equation: }{8}{section*.7}% 
 \contentsline {subsection}{\numberline {3.3.2}Special Case 1: Repeated Eigen Value}{8}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Special Case 2: Two Complex Eigen Values}{8}{subsection.3.3.3}% 
-\contentsline {chapter}{\numberline {4}Numerical Methods}{9}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Euler's Method}{9}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Basic Idea: Integrate The ODE}{9}{subsection.4.1.1}% 
-\contentsline {subsubsection}{Mean Value Theorem for Integrals}{9}{section*.8}% 
-\contentsline {paragraph}{Since $c$}{10}{section*.9}% 
-\contentsline {section}{\numberline {4.2}Improved Euler Method}{10}{section.4.2}% 
-\contentsline {paragraph}{Steps: }{10}{section*.10}% 
-\contentsline {paragraph}{The expense }{10}{section*.11}% 
-\contentsline {section}{\numberline {4.3}Runge Kutta Method}{10}{section.4.3}% 
-\contentsline {paragraph}{Steps}{11}{section*.12}% 
-\contentsline {section}{\numberline {4.4}Above and Beyond 4th Order}{11}{section.4.4}% 
+\contentsline {paragraph}{Case 1: Another can easily be found - }{8}{section*.8}% 
+\contentsline {paragraph}{Case 2: Another cannot easily be found - }{8}{section*.9}% 
+\contentsline {subsubsection}{Final Form}{9}{section*.10}% 
+\contentsline {subsection}{\numberline {3.3.3}Special Case 2: Two Complex Eigen Values}{9}{subsection.3.3.3}% 
+\contentsline {chapter}{\numberline {4}Numerical Methods}{10}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Euler's Method}{10}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Basic Idea: Integrate The ODE}{10}{subsection.4.1.1}% 
+\contentsline {subsubsection}{Mean Value Theorem for Integrals}{10}{section*.11}% 
+\contentsline {paragraph}{Since $c$}{11}{section*.12}% 
+\contentsline {section}{\numberline {4.2}Improved Euler Method}{11}{section.4.2}% 
+\contentsline {paragraph}{Steps: }{11}{section*.13}% 
+\contentsline {paragraph}{The expense }{11}{section*.14}% 
+\contentsline {section}{\numberline {4.3}Runge Kutta Method}{11}{section.4.3}% 
+\contentsline {paragraph}{Steps}{12}{section*.15}% 
+\contentsline {section}{\numberline {4.4}Above and Beyond 4th Order}{12}{section.4.4}% 
