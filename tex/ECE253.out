@@ -45,3 +45,10 @@
 \BOOKMARK [2][-]{subsection.6.9.1}{Gated D-Latch}{section.6.9}% 45
 \BOOKMARK [2][-]{subsection.6.9.2}{Edge-Triggered Flip Flop}{section.6.9}% 46
 \BOOKMARK [2][-]{subsection.6.9.3}{Synchronous Reset \(Active Low\)}{section.6.9}% 47
+\BOOKMARK [0][-]{chapter.7}{Finite State Machine}{}% 48
+\BOOKMARK [1][-]{section.7.1}{Review}{chapter.7}% 49
+\BOOKMARK [2][-]{subsection.7.1.1}{State Diagrams}{section.7.1}% 50
+\BOOKMARK [2][-]{subsection.7.1.2}{Lmao what is an always block actually}{section.7.1}% 51
+\BOOKMARK [2][-]{subsection.7.1.3}{Case Statements}{section.7.1}% 52
+\BOOKMARK [2][-]{subsection.7.1.4}{State Machine Diagrams and Sequantial Diagrams}{section.7.1}% 53
+\BOOKMARK [2][-]{subsection.7.1.5}{Case Statements for State Machines}{section.7.1}% 54

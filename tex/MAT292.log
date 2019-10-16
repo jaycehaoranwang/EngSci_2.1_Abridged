@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  11 OCT 2019 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 OCT 2019 15:12
 entering extended mode
 **./MAT292.tex
 (MAT292.tex
@@ -378,37 +378,50 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 \chapter
-             {Qualitative Things and Definitions} [1
+l.22 
+      [1
 
-]
+] [2]
 Chapter 1.
-[2
+[3
 
-] [3]
+] [4]
 Chapter 2.
-[4
-
-] [5]
-Chapter 3.
-[6
+[5
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+
+("/Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/tex/latex/
+base/omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+ [6]
+Chapter 3.
+[7
+
+] [8]
+Chapter 4.
+[9
+
+] [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (MAT292.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `MAT292.out' has not changed.
-(rerunfilecheck)             Checksum: 16E613A4FAA779EC46861CCD4F9E175B;915.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
+(rerunfilecheck)             Checksum: 5A9AAC63BA6114E071F85F9879E49DEC;1727.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 6277 strings out of 494866
- 95673 string characters out of 3176398
- 184333 words of memory out of 3000000
- 9838 multiletter control sequences out of 15000+200000
+ 6327 strings out of 494866
+ 96438 string characters out of 3176398
+ 185333 words of memory out of 3000000
+ 9863 multiletter control sequences out of 15000+200000
  13009 words of font info for 50 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  42i,7n,30p,226b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -418,17 +431,20 @@ MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/abharga
 va/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
 s/cmextra/cmex8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs
 /install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/abhargava/Library/Ap
-plication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pf
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pf
 b></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb></Users/abhargava/Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/abhargava
+e1/public/amsfonts/cm/cmmi8.pfb></Users/abhargava/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/abhargava
 /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Applicatio
-n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on MAT292.pdf (8 pages, 129969 bytes).
+cm/cmr17.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/instal
+l/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/abhargava/Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/
+abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Application Support/MiKTeX/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on MAT292.pdf (12 pages, 169320 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 38 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

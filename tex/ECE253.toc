@@ -78,3 +78,13 @@
 \contentsline {subsection}{\numberline {6.9.1}Gated D-Latch}{21}{subsection.6.9.1}% 
 \contentsline {subsection}{\numberline {6.9.2}Edge-Triggered Flip Flop}{21}{subsection.6.9.2}% 
 \contentsline {subsection}{\numberline {6.9.3}Synchronous Reset (Active Low)}{22}{subsection.6.9.3}% 
+\contentsline {chapter}{\numberline {7}Finite State Machine}{23}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Review}{23}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}State Diagrams}{23}{subsection.7.1.1}% 
+\contentsline {paragraph}{Example: }{23}{section*.35}% 
+\contentsline {paragraph}{Solution: }{23}{section*.36}% 
+\contentsline {paragraph}{One-Hot Encoding: }{23}{section*.37}% 
+\contentsline {subsection}{\numberline {7.1.2}Lmao what is an always block actually}{23}{subsection.7.1.2}% 
+\contentsline {subsection}{\numberline {7.1.3}Case Statements}{24}{subsection.7.1.3}% 
+\contentsline {subsection}{\numberline {7.1.4}State Machine Diagrams and Sequantial Diagrams}{24}{subsection.7.1.4}% 
+\contentsline {subsection}{\numberline {7.1.5}Case Statements for State Machines}{24}{subsection.7.1.5}% 

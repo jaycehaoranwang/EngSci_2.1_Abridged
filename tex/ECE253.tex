@@ -550,8 +550,8 @@ module D_Latch (D, clock, Q, Qb);
    begin
       if(clock==1'b1)
       begin // need this begin because you're doing two things in the if block.
-         Q = D1;
-         Q = ~D;
+         Q = D;
+         Qb = ~D;
       end // begin and end function like curly braces in C/C++/Java
    end //if clock == 0'b1, then verilog maintains previous values. 
 
@@ -592,6 +592,93 @@ end
 endmodule;
 
 \end{lstlisting}
+
+\chapter{Finite State Machine}
+\section{Review}
+A finite state machine (FSM) is an object that changes it properties (outputs) 
+based on inputs over time. For example, a human could be modeled as a state machine 
+where the input is water over time and the output is the need to go to the bathroom. 
+\textbf{Sequential circuits} are FSM's.
+
+\subsection{State Diagrams}
+\paragraph{Example: } $w$ can be $0, 1$. We are trying to find when $w$ has gone 
+$1 \to 0 \to 1$. 
+\paragraph{Solution: } We can use a shift register to get all 
+the sequential bits of $w$ in, then we use a simple logical expression on the outputs
+$w_0 \dot \bar{w_1} \dot w_2$. 
+
+\paragraph{One-Hot Encoding: } When only one of your bits is one. \textbf{one cold} 
+is the opposite.
+
+\subsection{Lmao what is an always block actually}
+\begin{lstlisting}
+always@(A, B, C)
+begin
+
+end
+\end{lstlisting}
+$A, B, C$ are in the sensitivity list, the code inside is `sensitive' to them so 
+as they change the internal block is fired. You can only use \textbf{if} statements 
+in here. 
+
+\subsection{Case Statements}
+Same as in pretty much all other programming languages. 
+\begin{lstlisting}
+case(A)
+   value1:
+      do_something;
+   value2: 
+      do_something_else;
+   value3: // multiple lines
+      begin
+         do_something;
+         do_something more;
+      end
+   default:
+      default_behavior;
+endcase
+\end{lstlisting}
+
+\subsection{State Machine Diagrams and Sequantial Diagrams}
+
+\subsection{Case Statements for State Machines}
+Quick example:
+\begin{lstlisting}
+module FSM(input w, clock, resetn, output z);
+   reg[1:0]y, Y;
+   parameter A = 2'b0, B = 2'b01, C = 2'b10, D = 2'b11;
+   //state table
+   always@(w, y) begin
+      case(y) begin
+         A: begin
+            if(W) 
+               Y = B;
+            else  
+               Y = A;
+         end
+         B: begin
+            if(w)
+               Y = B;
+            else 
+               Y = C;
+         end
+      endcase
+   end
+
+   always@(posedge clk) begin
+      if(!resetn)
+         y <= A;
+      else  
+         y <= Y;
+   end
+
+   assign z = (y == D);
+
+endmodule
+\end{lstlisting}
+\begin{itemize}
+\item \textit{parameter} lets you define constants. 
+\end{itemize}
 
 
 

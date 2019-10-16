@@ -69,6 +69,21 @@ then $\exists$ a function $f$ satistfying $$f_x(x, y) = M(x, y); f_y(x, y) = N(x
 
 \paragraph{The solution: } $f(x, y) = C$ where $C$ is an arbitrary constant.
 
+\section{Modeling with First Order Equations}
+These are some vague tips on how to solve these types of problems from textbook section 
+2.3
+\begin{itemize}
+\item To \textbf{create} the equation, state physical principles
+\item To \textbf{solve}, solve the equation and/or find out as much as you can about the nature of the solution.
+\item Try \textbf{comparing} the solution/equation to the physical phenomenon to `check' your work.
+\end{itemize}
+
+\section{Non-Linear vs. Linear DE's}
+\paragraph{Theorem on Uniqueness of 1st Order Solutions}
+$$y' + p(t)y = g(t)$$
+There exists a unique solution $y=\Phi(t)$ for each starting point $(y_0, t_0)$ if 
+$p$, $g$ are continuous on the given interval.
+
 \chapter{Systems of Two 1st Order DE's}
 \section{Set Up}
 Your first goal is to get the system in the form $$\frac{d \pmb{u}}{dt} = \pmb{Ku + b}$$
@@ -96,7 +111,81 @@ version looks (familiarly) like: $$\frac{d\pmb{x}}{dt} = \pmb{A}x + \pmb{b}$$
 \paragraph{Equilibrium points} arise when $\pmb{A}x = -\pmb{b}$
 
 \section{Solving}
+\subsection{General Solution}
+We start with $y' = \pmb{A}y+b$
+\paragraph{Converting to homogenous equation: } 
+\subsection{Special Case 1: Repeated Eigen Value}
+\subsection{Special Case 2: Two Complex Eigen Values}
 
+\chapter{Numerical Methods}
+$$\frac{dy}{dt} = f(t, y)$$
+\section{Euler's Method}
+We start with a first order ODE. Let us define a fixed step $\Delta t$.
+$$y_{n+1} = y_n + \Delta t(f(t_n, y_n))$$
+Error = $|y(t_n)-y_n| \approx \Delta t$
 
+\subsection{Basic Idea: Integrate The ODE}
+$$\int_{t_n}^{t_n+1} \frac{dy}{dt} dt = \int_{t_n}^{t_n+1} f(t, y(t)) dt$$
+Euler's method makes the following approximation.
+$$\int_{t_n}^{t_n+1} f(t, y(t)) dt \approx \Delta t f(t_n, y_n)$$
+But we can do better.
+
+\subsubsection{Mean Value Theorem for Integrals}
+If y is continuous on $[a, b]$ then $\exists c \in (a, b)$ so that 
+$$\frac{1}{b-a} \int_a^b g(t) dt = g(c)$$
+ 
+Euler's method would just assume that $g(c)$ is at the far left hand side of the 
+Riemann sum, so we can improve upon this! If we can guess $c$ more accurately, 
+our final answer will be a lot better.
+
+\paragraph{Since $c$} is more likely to be inside the interval $[t_n, t_{n+1}$, we could 
+try the following estimations to improve upon Euler's method. We will now try \textbf{sampling}.
+
+\section{Improved Euler Method}
+Let $g(t) = f(t, y(t))$. We literally use that riemann sum trapezoidal rule for this approximation.
+
+$$y_{n+1}-y_n \approx \frac{\Delta t}{2}(f(t_n, y_n)+f(t_{n+1}, y_{n+1}))$$
+Where we make the approximation for $y_{n+1}$ as
+$$y_{n+1} \approx y_n + \Delta t f(t_{n+1}, y_n)$$
+
+\paragraph{Steps: }
+\begin{itemize}
+\item Evaluate $K_1 = f(t_n, y_n)$
+\item Predict $u_{n+1} = y_n + \Delta t K_1$
+\item Evaluate $K_2 = f(t_{n+1}, u_{n+1})$
+\item Update $u_{n+1} = u_n + \Delta t \frac{k_1+k_2}{2}$
+\end{itemize}
+
+This method is consider \textbf{second order}, so $$|y(t_n)-y_n| \approx C(\Delta t)^2$$ (global error). 
+
+\paragraph{The expense } of a numerical method is roughly the \textbf{number of function calls to $f()$}. 
+Therefore, improved Euler's method comes at the cost of one more function evaluation of $f()$. 
+
+\section{Runge Kutta Method}
+Modern workhorse of solving ODE's. It's 4th order, so requires 4 function $f$ calls.
+
+\paragraph{Steps}
+\begin{itemize}
+\item $k_1 = f(t_n, y_n)$
+\item $u_n = y_n + \frac{\Delta t}{2} k_1$ (half step)
+\item $k_2 = f(t_n + \frac{\Delta t}{2}, u_n$
+\item $v_n = y_n + \frac{\Delta t}{2} k_2$
+\item $k_3 = f(t_n+\frac{\Delta t}{2}, v_n$
+\item $w_n = y_n + \Delta t k_3$
+\item $k_{-1} = f(t_{n+1}, w_n$
+\item $y_{n+1} = y_n + \Delta t(\frac{k_1}{6}+\frac{k_2}{3}+\frac{k_3}{3}+\frac{k_4}{6}$
+\end{itemize}
+
+\section{Above and Beyond 4th Order}
+If we can just increase our accuracy by adding more functional evaluations, then why can't we just keep on 
+adding function evaluations and increasing the order?
+
+\begin{tabular}{l|llllllllll}
+\textbf{Order} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+\hline
+\textbf{Min Function Evaluations} & 1 & 2 & 3 & 4 & \textbf{6} & 7 & \textbf{9} & 11 & 14 & ? \\
+\end{tabular}
+
+Answer: Past a 4 evaluations, it's not really worth while.
 
 \end{document}
