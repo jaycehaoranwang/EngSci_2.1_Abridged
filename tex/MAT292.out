@@ -9,17 +9,20 @@
 \BOOKMARK [1][-]{section.2.3}{Exact Equations}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.4}{Modeling with First Order Equations}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.5}{Non-Linear vs. Linear DE's}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{Systems of Two 1st Order DE's}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Set Up}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Existence and Uniqueness of Solutions}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.2.1}{Linear Autonomous Systems}{section.3.2}% 15
-\BOOKMARK [1][-]{section.3.3}{Solving}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.3.1}{General Solution}{section.3.3}% 17
-\BOOKMARK [2][-]{subsection.3.3.2}{Special Case 1: Repeated Eigen Value}{section.3.3}% 18
-\BOOKMARK [2][-]{subsection.3.3.3}{Special Case 2: Two Complex Eigen Values}{section.3.3}% 19
-\BOOKMARK [0][-]{chapter.4}{Numerical Methods}{}% 20
-\BOOKMARK [1][-]{section.4.1}{Euler's Method}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.1.1}{Basic Idea: Integrate The ODE}{section.4.1}% 22
-\BOOKMARK [1][-]{section.4.2}{Improved Euler Method}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{Runge Kutta Method}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Above and Beyond 4th Order}{chapter.4}% 25
+\BOOKMARK [1][-]{section.2.6}{Population Dynamcis with Autonomous Equations}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.6.1}{Simple Exponential}{section.2.6}% 13
+\BOOKMARK [2][-]{subsection.2.6.2}{Logistic equation}{section.2.6}% 14
+\BOOKMARK [0][-]{chapter.3}{Systems of Two 1st Order DE's}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Set Up}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Existence and Uniqueness of Solutions}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Linear Autonomous Systems}{section.3.2}% 18
+\BOOKMARK [1][-]{section.3.3}{Solving}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.1}{General Solution}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.2}{Special Case 1: Repeated Eigen Value}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.3}{Special Case 2: Two Complex Eigen Values}{section.3.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Numerical Methods}{}% 23
+\BOOKMARK [1][-]{section.4.1}{Euler's Method}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.1.1}{Basic Idea: Integrate The ODE}{section.4.1}% 25
+\BOOKMARK [1][-]{section.4.2}{Improved Euler Method}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Runge Kutta Method}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Above and Beyond 4th Order}{chapter.4}% 28

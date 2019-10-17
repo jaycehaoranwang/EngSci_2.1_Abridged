@@ -11,29 +11,33 @@
 \contentsline {section}{\numberline {2.4}Modeling with First Order Equations}{6}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}Non-Linear vs. Linear DE's}{6}{section.2.5}% 
 \contentsline {paragraph}{Theorem on Uniqueness of 1st Order Solutions}{6}{section*.3}% 
-\contentsline {chapter}{\numberline {3}Systems of Two 1st Order DE's}{7}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Set Up}{7}{section.3.1}% 
-\contentsline {paragraph}{More generally, }{7}{section*.4}% 
-\contentsline {section}{\numberline {3.2}Existence and Uniqueness of Solutions}{7}{section.3.2}% 
-\contentsline {paragraph}{Theorem: }{7}{section*.5}% 
-\contentsline {subsection}{\numberline {3.2.1}Linear Autonomous Systems}{8}{subsection.3.2.1}% 
-\contentsline {paragraph}{Equilibrium points}{8}{section*.6}% 
-\contentsline {section}{\numberline {3.3}Solving}{8}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}General Solution}{8}{subsection.3.3.1}% 
-\contentsline {paragraph}{Converting to homogenous equation: }{8}{section*.7}% 
-\contentsline {subsection}{\numberline {3.3.2}Special Case 1: Repeated Eigen Value}{8}{subsection.3.3.2}% 
-\contentsline {paragraph}{Case 1: Another can easily be found - }{8}{section*.8}% 
-\contentsline {paragraph}{Case 2: Another cannot easily be found - }{8}{section*.9}% 
-\contentsline {subsubsection}{Final Form}{9}{section*.10}% 
-\contentsline {subsection}{\numberline {3.3.3}Special Case 2: Two Complex Eigen Values}{9}{subsection.3.3.3}% 
-\contentsline {chapter}{\numberline {4}Numerical Methods}{10}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Euler's Method}{10}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Basic Idea: Integrate The ODE}{10}{subsection.4.1.1}% 
-\contentsline {subsubsection}{Mean Value Theorem for Integrals}{10}{section*.11}% 
-\contentsline {paragraph}{Since $c$}{11}{section*.12}% 
-\contentsline {section}{\numberline {4.2}Improved Euler Method}{11}{section.4.2}% 
-\contentsline {paragraph}{Steps: }{11}{section*.13}% 
-\contentsline {paragraph}{The expense }{11}{section*.14}% 
-\contentsline {section}{\numberline {4.3}Runge Kutta Method}{11}{section.4.3}% 
-\contentsline {paragraph}{Steps}{12}{section*.15}% 
-\contentsline {section}{\numberline {4.4}Above and Beyond 4th Order}{12}{section.4.4}% 
+\contentsline {section}{\numberline {2.6}Population Dynamcis with Autonomous Equations}{6}{section.2.6}% 
+\contentsline {paragraph}{Autonomous: }{6}{section*.4}% 
+\contentsline {subsection}{\numberline {2.6.1}Simple Exponential}{6}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.2}Logistic equation}{7}{subsection.2.6.2}% 
+\contentsline {chapter}{\numberline {3}Systems of Two 1st Order DE's}{8}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Set Up}{8}{section.3.1}% 
+\contentsline {paragraph}{More generally, }{8}{section*.5}% 
+\contentsline {section}{\numberline {3.2}Existence and Uniqueness of Solutions}{8}{section.3.2}% 
+\contentsline {paragraph}{Theorem: }{8}{section*.6}% 
+\contentsline {subsection}{\numberline {3.2.1}Linear Autonomous Systems}{9}{subsection.3.2.1}% 
+\contentsline {paragraph}{Equilibrium points}{9}{section*.7}% 
+\contentsline {section}{\numberline {3.3}Solving}{9}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}General Solution}{9}{subsection.3.3.1}% 
+\contentsline {paragraph}{Converting to homogenous equation: }{9}{section*.8}% 
+\contentsline {subsection}{\numberline {3.3.2}Special Case 1: Repeated Eigen Value}{9}{subsection.3.3.2}% 
+\contentsline {paragraph}{Case 1: Another can easily be found - }{9}{section*.9}% 
+\contentsline {paragraph}{Case 2: Another cannot easily be found - }{9}{section*.10}% 
+\contentsline {subsubsection}{Final Form}{10}{section*.11}% 
+\contentsline {subsection}{\numberline {3.3.3}Special Case 2: Two Complex Eigen Values}{10}{subsection.3.3.3}% 
+\contentsline {chapter}{\numberline {4}Numerical Methods}{11}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Euler's Method}{11}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Basic Idea: Integrate The ODE}{11}{subsection.4.1.1}% 
+\contentsline {subsubsection}{Mean Value Theorem for Integrals}{11}{section*.12}% 
+\contentsline {paragraph}{Since $c$}{12}{section*.13}% 
+\contentsline {section}{\numberline {4.2}Improved Euler Method}{12}{section.4.2}% 
+\contentsline {paragraph}{Steps: }{12}{section*.14}% 
+\contentsline {paragraph}{The expense }{12}{section*.15}% 
+\contentsline {section}{\numberline {4.3}Runge Kutta Method}{12}{section.4.3}% 
+\contentsline {paragraph}{Steps}{13}{section*.16}% 
+\contentsline {section}{\numberline {4.4}Above and Beyond 4th Order}{13}{section.4.4}% 
