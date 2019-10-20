@@ -13,3 +13,27 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Underdampened Energy}{section.2.3}% 13
 \BOOKMARK [2][-]{subsection.2.3.2}{Critical and Overdampened Energy}{section.2.3}% 14
 \BOOKMARK [1][-]{section.2.4}{Q-Factor}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Forced Oscillators}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Equation of Motion ODE}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Solution: Undamped Forced Oscillator}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{= 0}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{Solution: Forced Damped Oscillators}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Transient Response}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.5}{Power in FDHO's}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{Average Power Per Cycle}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.2}{Power vs. }{section.3.5}% 24
+\BOOKMARK [0][-]{chapter.4}{Coupled Oscillators}{}% 25
+\BOOKMARK [1][-]{subsection.4.0.1}{How to Solve Coupled Systems}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.0.2}{Review: Results from Linear Algebra}{subsection.4.0.1}% 27
+\BOOKMARK [0][-]{chapter.5}{Standing Waves}{}% 28
+\BOOKMARK [1][-]{section.5.1}{The Taut String}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Solution to Wave Equation}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.2.1}{Boundary Conditions}{section.5.2}% 31
+\BOOKMARK [2][-]{subsection.5.2.2}{Final Solution}{section.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.2.3}{Surrounding Math}{section.5.2}% 33
+\BOOKMARK [2][-]{subsection.5.2.4}{Energy Considerations}{section.5.2}% 34
+\BOOKMARK [0][-]{chapter.6}{Traveling Waves}{}% 35
+\BOOKMARK [1][-]{section.6.1}{Energy Considerations}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.2}{Power Considerations}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.3}{Reflection and Transmission}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.4}{Traveling Waves in Multiple Dimensions}{chapter.6}% 39

@@ -1,19 +1,57 @@
-\contentsline {section}{\numberline {0.1}Introduction}{1}{section.0.1}% 
-\contentsline {chapter}{\numberline {1}Simple Harmonic Oscillators (SHO's)}{2}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Set Up}{2}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}ODE and Solution}{2}{section.1.2}% 
-\contentsline {paragraph}{ODE:}{2}{section*.2}% 
-\contentsline {paragraph}{Solution:}{2}{section*.3}% 
-\contentsline {chapter}{\numberline {2}Dampened Harmonic Oscillators (DHO's)}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Set Up}{3}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}ODE and Solutions}{3}{section.2.2}% 
-\contentsline {paragraph}{ODE}{3}{section*.4}% 
-\contentsline {subsection}{\numberline {2.2.1}General Solution}{3}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Regieme 1: Underdampened}{4}{subsection.2.2.2}% 
-\contentsline {subsubsection}{Logarithmic Decrement}{4}{section*.5}% 
+\contentsline {section}{\numberline {0.1}Introduction}{2}{section.0.1}% 
+\contentsline {chapter}{\numberline {1}Simple Harmonic Oscillators (SHO's)}{3}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Set Up}{3}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}ODE and Solution}{3}{section.1.2}% 
+\contentsline {paragraph}{ODE:}{3}{section*.2}% 
+\contentsline {paragraph}{Solution:}{3}{section*.3}% 
+\contentsline {chapter}{\numberline {2}Dampened Harmonic Oscillators (DHO's)}{4}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Set Up}{4}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}ODE and Solutions}{4}{section.2.2}% 
+\contentsline {paragraph}{ODE}{4}{section*.4}% 
+\contentsline {subsection}{\numberline {2.2.1}General Solution}{4}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Regieme 1: Underdampened}{5}{subsection.2.2.2}% 
+\contentsline {subsubsection}{Logarithmic Decrement}{5}{section*.5}% 
 \contentsline {subsection}{\numberline {2.2.3}Regieme 2: Heavily Dampened}{5}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2.2.4}Regieme 3: Critically Dampened}{5}{subsection.2.2.4}% 
-\contentsline {section}{\numberline {2.3}Energy}{5}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Underdampened Energy}{5}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Critical and Overdampened Energy}{5}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.2.4}Regieme 3: Critically Dampened}{6}{subsection.2.2.4}% 
+\contentsline {section}{\numberline {2.3}Energy}{6}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Underdampened Energy}{6}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Critical and Overdampened Energy}{6}{subsection.2.3.2}% 
 \contentsline {section}{\numberline {2.4}Q-Factor}{6}{section.2.4}% 
+\contentsline {chapter}{\numberline {3}Forced Oscillators}{8}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Equation of Motion ODE}{8}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Solution: Undamped Forced Oscillator}{8}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}$\omega = \omega _0$}{8}{subsection.3.2.1}% 
+\contentsline {section}{\numberline {3.3}Solution: Forced Damped Oscillators}{8}{section.3.3}% 
+\contentsline {paragraph}{General Solution: }{9}{section*.6}% 
+\contentsline {paragraph}{Updates to $A$ and $\delta (\omega )$: }{9}{section*.7}% 
+\contentsline {paragraph}{Maximum $A(w)$}{9}{section*.8}% 
+\contentsline {section}{\numberline {3.4}Transient Response}{9}{section.3.4}% 
+\contentsline {section}{\numberline {3.5}Power in FDHO's}{9}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Average Power Per Cycle}{9}{subsection.3.5.1}% 
+\contentsline {paragraph}{Maximizing Case: }{10}{section*.9}% 
+\contentsline {subsection}{\numberline {3.5.2}Power vs. $\omega $}{10}{subsection.3.5.2}% 
+\contentsline {chapter}{\numberline {4}Coupled Oscillators}{11}{chapter.4}% 
+\contentsline {paragraph}{Main Takeaways}{11}{section*.10}% 
+\contentsline {subsection}{\numberline {4.0.1}How to Solve Coupled Systems}{11}{subsection.4.0.1}% 
+\contentsline {subsubsection}{Determine Equations of Motion}{11}{section*.11}% 
+\contentsline {subsubsection}{Assume $\exists $ a normal mode}{12}{section*.12}% 
+\contentsline {subsection}{\numberline {4.0.2}Review: Results from Linear Algebra}{12}{subsection.4.0.2}% 
+\contentsline {paragraph}{Connecting Eigen Things to Real Things}{12}{section*.13}% 
+\contentsline {chapter}{\numberline {5}Standing Waves}{13}{chapter.5}% 
+\contentsline {paragraph}{Traveling wave: }{13}{section*.14}% 
+\contentsline {paragraph}{Continuum: }{13}{section*.15}% 
+\contentsline {section}{\numberline {5.1}The Taut String}{13}{section.5.1}% 
+\contentsline {paragraph}{WAVE EQUATION: }{13}{section*.16}% 
+\contentsline {section}{\numberline {5.2}Solution to Wave Equation}{13}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Boundary Conditions}{14}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Final Solution}{14}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Surrounding Math}{14}{subsection.5.2.3}% 
+\contentsline {subsection}{\numberline {5.2.4}Energy Considerations}{15}{subsection.5.2.4}% 
+\contentsline {chapter}{\numberline {6}Traveling Waves}{16}{chapter.6}% 
+\contentsline {paragraph}{Most common traveling wave function: }{16}{section*.17}% 
+\contentsline {section}{\numberline {6.1}Energy Considerations}{16}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Power Considerations}{17}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Reflection and Transmission}{17}{section.6.3}% 
+\contentsline {paragraph}{Boundary Condition 1: }{17}{section*.18}% 
+\contentsline {paragraph}{Boundary Condition 2: }{17}{section*.19}% 
+\contentsline {section}{\numberline {6.4}Traveling Waves in Multiple Dimensions}{18}{section.6.4}% 

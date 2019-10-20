@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{report}
 
 \usepackage{amsmath,amsfonts,mathtools}
+\usepackage{amssymb}
 \usepackage{hyperref}
 
 \begin{document}
@@ -36,10 +37,7 @@ Solve for 2 unknowns (usually $a$ and $\theta$) based on two initial conditions.
 
 \chapter{Dampened Harmonic Oscillators (DHO's)}
 \section{Set Up}
-We have all the same forces from last time plus a force of friction. We kind of have our
-hands tied with what models of friction we can use (remember how friction can be proportional
-to velocity, acceleration?) because this course only deals with linear systems. Therefore our
-one and only formula for friction is:
+We have all the same forces from last time plus the force of friction.
 
 $$F_{friction} = F_f = -bv$$
 
@@ -58,12 +56,13 @@ This is actually really cool, because the existence of a complex component in $r
 enables oscillation. 
 
 If we populate the initial ODE with the derivatives of our $x(t)$, we get:
-$$ar^2e^{rt} + \gamma are^{rt} + \omega ae^rt = 0$$
-$$r^2 + \gamma r + \omega = 0$$
+$$ar^2e^{rt} + \gamma are^{rt} + \omega_0^2 ae^rt = 0$$
+$$r^2 + \gamma r + \omega_0^2 = 0$$
 
 This results in a simple quadratic for which you can solve for $r$ using the quadratic formula.
 
 $$x = \frac{b \pm \sqrt{b^2 - 4ac}}{2a}$$
+$$r = \frac{\gamma \pm \sqrt{\gamma^2 - 4w_0^2}}{2}$$
 
 There will be up to 2 $r$ values. Since the solution space is a 2-D vector space, any 
 linear combination of vectors (i.e. values of $r$) is still a valid vector.
@@ -76,7 +75,7 @@ If the dampening is weak enough, there will still be \textbf{some} oscillation b
 oscillator comes to rest. In this case, the general solution is:
 
 $$x(t) = A_0 e^{-\gamma t/2} cos(w_dt + \phi)$$
-Where $w_d^2 = w_dampened^2 = \omega_0^2 - \frac{\gamma^2}{4}$
+Where $w_d^2 = w_{dampened}^2 = \omega_0^2 - \frac{\gamma^2}{4}$
 
 You get this by solving for $r$ with the quadratic formula, plugging the two imaginary 
 roots in, then taking just the real components because you know that $x(t)$ is real.
@@ -87,6 +86,7 @@ This quantity is the $ln$ of the ratio of 1 peak to the next.
 $$\frac{\gamma T_d}{2}$$
 
 Where $T_d$ is the period based on $w_d$.
+
 
 \subsection{Regieme 2: Heavily Dampened}
 In this case both roots are real. This occurs when $\gamma^2-4\omega_0^2 > 0$
@@ -124,7 +124,7 @@ energy and solve for the velocity equation.
 
 \section{Q-Factor}
 $Q$ is a measure of the tendency to oscillate dividied by the tendency to dampen.
-$$Q = frac{\omega_0}{\gamma}$$
+$$Q = \frac{\omega_0}{\gamma}$$
 Let $\tau = \frac{1}{gamma}$ be proportional to the lifetime of the oscillator. Then 
 $n = \frac{\tau}{T_0}$ is the number of cycles in a lifetime.
 $$Q = 2\pi n$$
@@ -138,7 +138,211 @@ $$\frac{E_n - E_{n+1}}{E_n} = ... = \frac{2\pi}{Q}$$
 Therefore $Q$ is the energy in oscillator divided by the amount of energy lost at the
 following \textbf{radian}.
 
+\chapter{Forced Oscillators}
+\section{Equation of Motion ODE}
+$$\ddot{x} + \omega_0^2 x = F_0' cos(\omega t)$$
+Where $\omega_0^2 = k/m$, $F_0' = F_0/m$, $\omega$ is the driving frequency.
 
+\section{Solution: Undamped Forced Oscillator}
+$$x(t) = A(\omega) cos(\omega t - \delta(\omega))$$
+Where
+$$\delta(\omega_0) = 0 \,\,if\,\, \omega < \omega_0, else \pi$$
+If you shake it too fast, it'll vibrate in exactly opposite phase. 
+$$A(w) = |\frac{\omega_0^2}{\omega_0^2 - \omega^2}A_f|$$
 
+\subsection{$\omega = \omega_0$}
+Perfect resonance makes amplitude tend toward infinity.
+$$x(t) = \frac{A_f \omega_0}{\sqrt{2}} t cos(\omega_0t - \frac{pi}{4})$$
+
+\section{Solution: Forced Damped Oscillators}
+Equation of Motion: $\ddot{x} + \gamma \dot{x} + \omega_0^2 x = A_f w_0^2 cos(wt)$
+
+\paragraph{General Solution: } Same as before 
+$$x(t) = A(\omega) cos(\omega t - \delta(\omega))$$
+
+\paragraph{Updates to $A$ and $\delta(\omega)$: } 
+$$A(\omega) = \frac{\omega_0^2}{\sqrt{\gamma^2\omega^2+(\omega_0^2 - \omega)^2}}A_f$$
+$$tan[\delta(\omega)] = \frac{\gamma \omega}{\omega_0^2-\omega^2}$$
+
+\paragraph{Maximum $A(w)$} occurs when $\omega = \omega_0^2 - \frac{\gamma^2}{2}$. In other words, 
+$$\omega_{max} = \omega_0^2[1-\frac{1}{2Q^2}]$$
+
+$$\therefore A_{max} = \frac{Q}{\sqrt{1-\frac{1}{4Q^2}}}A_f$$
+
+\section{Transient Response}
+When you suddenly start a damped, forced oscillator, you have one mode that is the long-term response and one 
+that is the transient response (as if there is no forcing).
+
+$$x_{free} = A_{free} e^{-\gamma t / 2}cos(\omega_d t + \phi)$$
+$$x_{forced} = A(\omega) cos(\omega t - \delta(\omega))$$
+
+$x_{free}$ tend toward zero and only exists for the beginning, so it is the transient response. 
+
+\section{Power in FDHO's}
+$$\therefore -\dot{E}(w, t) = P(w, t) = bv^2 = bV^2(w)sin^2(wt-\delta)$$
+Where $V$ is the amplitude of the velocity.
+
+\subsection{Average Power Per Cycle}
+$$\bar{P}(w) = \frac{F_0^2}{2m} \frac{\gamma}{\gamma^2 + (\omega_0^2/\omega - \omega)^2}$$
+\paragraph{Maximizing Case: } $\bar{P}$ is maximized when $w = w_0$
+
+\subsection{Power vs. $\omega$}
+Let us plot $\bar{P}(w)$ vs. $\omega / \omega_0$. The $\omega_{full width half height} = \omega_{fwhh} = \gamma$
+
+\chapter{Coupled Oscillators}
+\paragraph{Main Takeaways}
+\begin{itemize}
+\item Motion of coupled systems is a linear combination of orthogonal forms of motion.
+\item Motion can be found via 2x2 matrix system
+\item Each normal mode has a unique frequency common to all elements. 
+\item `Eigen' = `normal'.
+\item \textbf{Beating} = when frequencies of modes are very close.
+\end{itemize}
+
+\subsection{How to Solve Coupled Systems}
+From tutorial note: 
+\subsubsection{Determine Equations of Motion}
+You must give each mass its own coordinate system where deviation in one direction adds to the zero 
+coordinate and deviation to the other subtracts from the zero coordinate.
+
+Implement $f = ma$ and $f = kx$ to create equations of motion of each mass depending on its position 
+and the position of its neighbouring masses.
+
+Now we have $$m\ddot{x_a} = ...$$ $$...$$ $$m\ddot{x_c} = ...$$
+
+\subsubsection{Assume $\exists$ a normal mode}
+This implies that $$x_a = A cos(wt)$$ $$...$$ $$x_c = C cos(wt)$$
+
+All we need to solve for now is $w$, and $A \to C$. To do so, we sub our definitions for $x_a, x_b, and x_c$ 
+into our initial EoM, which gives us relationships between $A, B, C, w$ (cosines cancel out!)
+
+Now we just have to put everything in a matrix equation of the form:
+$$[...][A, B, C] = [0, 0, 0]$$
+$$[M][A, B, C] = [0, 0, 0]$$
+
+which implies that $det(M) = 0$. This will give us $3$ different eigen frequencies (or however many degrees 
+of freedom we have). From there, we just have to solve for the coefficients $A, B, C$ via initial conditions, 
+remembering that $x_a = Acos(wt)$ and so on!
+
+\subsection{Review: Results from Linear Algebra}
+\begin{itemize}
+\item $Av = \lambda v$, $(A-\lambda I)v = 0$
+\item We get non-trivial solutions for $v$ if $det(A - \lambda I) = 0$
+\item A matrix is diagonizable if $\exists n$ eigen values $\lambda$ (sufficient, not necessary)
+\item Each solution to the initial $Ax = b$ is unique because the eigen vectors form a basis.
+\end{itemize}
+
+\paragraph{Connecting Eigen Things to Real Things}
+\begin{itemize}
+\item Each $\lambda_i = \omega_i^2$
+\end{itemize}
+
+\chapter{Standing Waves}
+\paragraph{Traveling wave: } a traveling disturbance where no matter travels on average.
+\paragraph{Continuum: } infinite coupled oscillators $\to$ infinite modes can arise, characterized 
+by nodes and antinodes.
+
+Boundaries give rise to standing waves (think about boundaries on a plucked guitar string).
+
+\section{The Taut String}
+Properties of a taut string:
+\begin{itemize}
+\item $tan\theta = \frac{dy}{dx} << 1$ where $x$ is along the string and $y$ is across the string.
+\item Vibrations occur in only one plane
+\item \textbf{Phase speed } is $v^2 = T/\mu$ with $T$ as \textbf{tension} and $\mu$ as 
+\end{itemize}
+
+\paragraph{WAVE EQUATION: } $$\frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2y}{\partial x^2}$$
+
+\section{Solution to Wave Equation}
+We assume that the solution is of the form $$y(x, t) = f(x)h(t)$$ so that it is seperable and works nicely 
+with the wave equation. When we sub this into the wave equation, we get:
+
+Let $$\frac{1}{h(t)} \frac{d^2h(t)}{dt^2} = -w^2 = v^2 \frac{1}{f(x)} \frac{d^^2f(x)}{dx^2}$$
+
+So we can still have a $w^2$ that fits well into our SHO ODE:
+
+$$h(t) = H cos(wt + \phi)$$ $$f(x) = A cos(kx) + B sin(kx)$$ where $k = w/v$
+
+\subsection{Boundary Conditions}
+We know that $y(t, 0) = y(t, L) = 0$ because the string is secured on either end. This forces the $A$ term 
+in the equation $f(x) = A cos(kx) + B sin(kx)$ to be zero, so now $f(x) = B sin(kx)$. Now $f(kL) = 0$ for 
+any natural number $k$. 
+
+$$k_n = \frac{n \pi}{L} \,\,, \,\, n \in \mathbb{N}$$
+
+Recall that $k = w/v$ so now $w_n = \frac{n \pi v}{L}$. 
+
+\subsection{Final Solution}
+$$y_n(x, t) = C_n cos(w_n t + \phi_n)sin(k_n x)$$
+$$y(x, t) = \sum_{n=1}^{\infty} y_n(x, t)$$
+
+\subsection{Surrounding Math}
+We need some tools to do proofs and reasoning about these standing and traveling waves. 
+$$f \odot g = \frac{2}{L} \int_0^L f(x)g(x) dx$$
+which represents the inner product of the vector space and 
+$\delta_{mn}$ which is 1 when $m=n$.
+$$sin(k_n x) \odot sin(k_m x) = \delta_{mn}$$
+
+Because they are orthogonal to eachother.
+
+\subsection{Energy Considerations}
+$$E_n = \frac{1}{4} \mu L w_n^2 A_n^2$$
+
+\chapter{Traveling Waves}
+The real general solution to the wave equation: 
+$$\frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2 y}{\partial x^2}$$
+$$y(x, t) = f(x-vt) + g(x+vt)$$
+
+It can be shown via trig sums that this is the same as the standing wave solution when you 
+put it between two boundaries.
+
+\paragraph{Most common traveling wave function: } $$y(x, t) = A sin(\frac{2 \pi}{\lambda} (x \pm vt))$$
+$$= A sin(k(x\pm vt))$$
+$$= A sin(kx \pm wt)$$
+\begin{itemize}
+\item $\lambda$ = wavelength
+\item $k$ = wavenumber
+\item $w$ = angular frequency
+\item $\frac{2\pi}{w}$ = period
+\end{itemize}
+
+\section{Energy Considerations}
+$$K = \frac{1}{2} \mu (\frac{\partial y}{\partial t})^2$$
+$$U = \frac{1}{2} \mu v^2 (\frac{\partial y}{\partial x})^2$$
+
+$<>$ corresponds to integration over one wavelength, so $<f> = \int_0^{\lambda} f(x) dx$.
+
+To find $<E>$ we can apply the above formulae for $K$ and $U$ to the general solution 
+$y(x, t)=A cos(kx-wt)$.
+
+$$<E> = \frac{1}{2} \mu \lambda A^2 w^2$$
+
+\section{Power Considerations}
+Since these waves are unbounded traveling entites, it's useful to consider how much 
+energy they transport past a certain point per second.
+
+We start with instantaneous energy $E = \mu A^2 w^2 sin^2(kx - wt)$. Then 
+$$\bar{P} = \frac{w <E>}{2 \pi} = \frac{\mu \lambda A^2 w^3}{4 \pi} = \frac{\mu A^2 w^2 v}{2}$$
+
+\section{Reflection and Transmission}
+When medium changes discontinuously, you get reflection and transmission. The boundary conditions 
+at the discontinuity are 
+\paragraph{Boundary Condition 1: } matching frequency, amplitude, and phase.
+\paragraph{Boundary Condition 2: } transverse (across-string) forces must match.
+
+Therefore we know that 
+$$y_T(x, t) = A_T cos(wt - k_t x)$$ $$y_R = A_R cos (wt + k_r x)$$
+
+have the same $wt$ term, and $k_R, k_T > 0$ so they propagate in the right directions. The reflected 
+wave is in the same original medium, so its spatial frequency $k_R = k_I = w/v_1$ while $k_T = w/v_2$.
+
+Now the only numbers that aren't known are $A_R, A_T$. According to boundary condition 1, $A_I + A_R = A_T$. 
+Now we use boundary condition to solve for 
+$$\frac{A_T}{A_I} = \frac{2k_1}{k_1+k_2} = \pmb{\tau_{12}} = \frac{2 \sqrt{\mu_1}}{\sqrt{\mu_1} + \sqrt{\mu_2}} $$ 
+$$\frac{A_R}{A_I} = \frac{k_1 - k_2}{k_1 + k_2} = \pmb{\rho_{12}} = \frac{\sqrt{\mu_1} - \sqrt{\mu_2}}{\sqrt{\mu_1} + \sqrt{\mu_2}}$$
+
+\section{Traveling Waves in Multiple Dimensions}
+...
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  16 OCT 2019 23:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  20 OCT 2019 18:25
 entering extended mode
 **./MAT292.tex
 (MAT292.tex
@@ -419,22 +419,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
  (MAT292.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
-
-
-Package rerunfilecheck Warning: File `MAT292.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MAT292.out':
-(rerunfilecheck)             Before: 5A9AAC63BA6114E071F85F9879E49DEC;1727
-(rerunfilecheck)             After:  8CB0E6CE65C026FE3A886F05A5845C0F;1962.
+Package rerunfilecheck Info: File `MAT292.out' has not changed.
+(rerunfilecheck)             Checksum: 8CB0E6CE65C026FE3A886F05A5845C0F;1962.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 6338 strings out of 494866
- 96560 string characters out of 3176398
- 185333 words of memory out of 3000000
- 9864 multiletter control sequences out of 15000+200000
+ 6341 strings out of 494866
+ 96609 string characters out of 3176398
+ 186333 words of memory out of 3000000
+ 9867 multiletter control sequences out of 15000+200000
  13356 words of font info for 51 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  42i,7n,30p,226b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -457,9 +450,9 @@ amsfonts/cm/cmsy10.pfb></Users/abhargava/Library/Application Support/MiKTeX/tex
 mfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/abhargava/Library/
 Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12
 .pfb>
-Output written on MAT292.pdf (14 pages, 185066 bytes).
+Output written on MAT292.pdf (14 pages, 186491 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
+ 299 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
