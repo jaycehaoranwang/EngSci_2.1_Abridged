@@ -238,18 +238,29 @@ remembering that $x_a = Acos(wt)$ and so on!
 \end{itemize}
 
 \chapter{Standing Waves}
-\paragraph{Traveling wave: } a traveling disturbance where no matter travels on average.
+\paragraph{travelling wave: } a travelling disturbance where no matter travels on average.
 \paragraph{Continuum: } infinite coupled oscillators $\to$ infinite modes can arise, characterized 
 by nodes and antinodes.
 
 Boundaries give rise to standing waves (think about boundaries on a plucked guitar string).
+
+\section{Expectations and Takeaways}
+\begin{enumerate}
+\item Wave equation is $$\frac{\partial^2 y}{\partial t^2} = v^2\frac{\partial^2y}{\partial x^2}$$
+\item Phase speed equation is $$v = \sqrt{\frac{T}{\mu}}$$
+\item \textbf{Seperation of variables} is when you
+\item Wavenumbers $k_n$ are basically the number of antinodes in the given mode and angular frequencies $\omega_n$ are frequency at which mode $n$ virbrates, 
+wavelengths $\lambda_n$ are the physical length of each wave in the mode $n$.
+\item Orthogonality relates how different modes of oscillations in standing waves don't interact.
+\item Total energy = sum of energy in each mode of oscillation.
+\end{enumerate}
 
 \section{The Taut String}
 Properties of a taut string:
 \begin{itemize}
 \item $tan\theta = \frac{dy}{dx} << 1$ where $x$ is along the string and $y$ is across the string.
 \item Vibrations occur in only one plane
-\item \textbf{Phase speed } is $v^2 = T/\mu$ with $T$ as \textbf{tension} and $\mu$ as 
+\item \textbf{Phase speed } is $v^2 = T/\mu$ with $T$ as \textbf{tension} and $\mu$ as \textbf{mass per unit length of string}.
 \end{itemize}
 
 \paragraph{WAVE EQUATION: } $$\frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2y}{\partial x^2}$$
@@ -278,7 +289,7 @@ $$y_n(x, t) = C_n cos(w_n t + \phi_n)sin(k_n x)$$
 $$y(x, t) = \sum_{n=1}^{\infty} y_n(x, t)$$
 
 \subsection{Surrounding Math}
-We need some tools to do proofs and reasoning about these standing and traveling waves. 
+We need some tools to do proofs and reasoning about these standing and travelling waves. 
 $$f \odot g = \frac{2}{L} \int_0^L f(x)g(x) dx$$
 which represents the inner product of the vector space and 
 $\delta_{mn}$ which is 1 when $m=n$.
@@ -289,7 +300,7 @@ Because they are orthogonal to eachother.
 \subsection{Energy Considerations}
 $$E_n = \frac{1}{4} \mu L w_n^2 A_n^2$$
 
-\chapter{Traveling Waves}
+\chapter{Travelling Waves}
 The real general solution to the wave equation: 
 $$\frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2 y}{\partial x^2}$$
 $$y(x, t) = f(x-vt) + g(x+vt)$$
@@ -297,13 +308,13 @@ $$y(x, t) = f(x-vt) + g(x+vt)$$
 It can be shown via trig sums that this is the same as the standing wave solution when you 
 put it between two boundaries.
 
-\paragraph{Most common traveling wave function: } $$y(x, t) = A sin(\frac{2 \pi}{\lambda} (x \pm vt))$$
+\paragraph{Most common travelling wave function: } $$y(x, t) = A sin(\frac{2 \pi}{\lambda} (x \pm vt))$$
 $$= A sin(k(x\pm vt))$$
 $$= A sin(kx \pm wt)$$
 \begin{itemize}
 \item $\lambda$ = wavelength
 \item $k$ = wavenumber
-\item $w$ = angular frequency
+\item $\omega^2 = v^2k^2$, k is the wave number.
 \item $\frac{2\pi}{w}$ = period
 \end{itemize}
 
@@ -319,7 +330,7 @@ $y(x, t)=A cos(kx-wt)$.
 $$<E> = \frac{1}{2} \mu \lambda A^2 w^2$$
 
 \section{Power Considerations}
-Since these waves are unbounded traveling entites, it's useful to consider how much 
+Since these waves are unbounded travelling entites, it's useful to consider how much 
 energy they transport past a certain point per second.
 
 We start with instantaneous energy $E = \mu A^2 w^2 sin^2(kx - wt)$. Then 
@@ -342,7 +353,130 @@ Now we use boundary condition to solve for
 $$\frac{A_T}{A_I} = \frac{2k_1}{k_1+k_2} = \pmb{\tau_{12}} = \frac{2 \sqrt{\mu_1}}{\sqrt{\mu_1} + \sqrt{\mu_2}} $$ 
 $$\frac{A_R}{A_I} = \frac{k_1 - k_2}{k_1 + k_2} = \pmb{\rho_{12}} = \frac{\sqrt{\mu_1} - \sqrt{\mu_2}}{\sqrt{\mu_1} + \sqrt{\mu_2}}$$
 
-\section{Traveling Waves in Multiple Dimensions}
-...
+\section{travelling Waves in Multiple Dimensions}
+The wave equation become: $$\frac{\partial^2 f}{\partial t^2} = v^2\nabla^2f = v^2[\frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2}]$$
+
+\chapter{Dispersion}
+For non-dispersive waves (the ones we have been talking about up to this point), the following relationship is true for angular 
+frequency, wave number $k$, and velocity $v$: $$\omega^2 = k^2v^2$$
+
+For dispersive waves, you have a non-linear relationship. Therefore different waves disperse at different rates. 
+
+Let's think about the phenomenon of beating: when you have similar frequency waves going past eachother, you get these ``beats'' from 
+interference patterns (look up a picture to solidify your understanding!).
+
+Since we have different frequencies going at different rates, the beats now move! Let's have an example: 
+
+\section{Example of Dispersive Waves}
+Let the following relationship hold for angular frequency and speed of a wave ($g$ is actually just gravity, this is a weird example)
+$$\omega = \sqrt{gk}$$
+$$v = \omega/k = \sqrt{g/k}$$
+
+The only thing you can really be asked on the exam is to find the group velocity (according to Shayne, at least): 
+$$v_g = \frac{d\omega}{dk} \approx \frac{\Delta \omega}{\Delta k}$$
+
+Group velocity is just the speed of the little wave packets. It's an absolute speed that a stationary observer would see. If you have
+two different waves interfereing at $\omega_1$ and $\omega_2$, use the $\Delta$ form to find the speed of the packets!
+
+\chapter{Special Relativity}
+\section{Introduction}
+An intuitive grasp of this stuff is pretty easy. Just watch the minute physics videos about it, they do a great job.
+
+The key points are that light speed is constant no matter your frame of reference. In other words, it looks like $v_1 + c = v_1$, 
+regardless of what $v_1$ is. Therefore, the way you would think to transform a spacetime diagram to be from another person's 
+reference frame is not correct. You use this cool Lorentz transformation thing:
+
+\section{Formulae}
+\paragraph{The Lorentz factor} comes up all the time: $$\gamma(v) = \frac{1}{\sqrt{1-v^2/c^2}}$$
+\subsection{Time Dilation}
+Let's say you pass by some dude on a planet at close to the speed of light. Both of you will see the other acting really slowly. In other 
+words, \textbf{the moving clock is always observed to be slower than the stationary clock}. Therefore, for this relationship, $\Delta t'$ 
+is just \textbf{the other clock}:
+$$\Delta t' = \gamma(v)\Delta t$$
+
+\subsection{Length Contraction}
+Same thing as above applies with \textbf{the moving object is always observed to be scrunched up more than the stationary object}: 
+$$L=\frac{L_0}{\gamma(v)}$$
+
+\subsection{Relativstic Events: Location and Time}
+Let's say you're watching a dude running close to the speed of light ($v$) who is about to detonate a cake. If the dude does so at 
+position $x$ and time $t$ from his perspective, the position $x_{new}$ and time $t_{new}$ that you observe are given by the following 
+equations.
+$$t_{new}=\gamma(t-\frac{v^2}{c^2}x)$$
+$$x_{new}=\gamma(x-vt)$$
+
+\subsection{Relativistic Energy and Momentum}
+$$p=\gamma(v)m_0v$$
+$$E = \gamma mc^2$$
+$$KE=E-mc^2=\gamma mc^2-mc^2=(\gamma-1)mc^2$$
+
+\paragraph{Invariant Energy: }
+$$m_0^2c^4=E-p^2c^2$$
+
+Apparently the doppler shift equation (relativistic) is given, so don't worry too much about that.
+
+\subsection{4-Vectors}
+In conventional 3-D space, you can have nice invariant properties of objects, like relative distances. In relatistic 4-D space 
+you can have nice invariant 4-vectors that tell you the relative distance of objects and events in 4-D space!
+
+$$\Delta x = (c\Delta t,\Delta x, \Delta y, \Delta z) = (c\Delta t, \pmb{r})$$
+
+\paragraph{The Inner Product} (the thing that is actually invariant) is given by: 
+$$A = (A_0, \pmb{A}); \, B = (B_0, \pmb{B})$$
+$$A\cdot B=A_0B_0 - \pmb{A}\cdot \pmb{B}$$
+
+Where the bolded A and B are a vector of the three spatial coordinates, the $A_0/B_0$ is the the $c\Delta t$ component of the 4-vector.
+
+The other form of 4-vector is as follows: 
+
+$$...$$
+
+
+
+\chapter{Quantum}
+\section{Particle Energy, Wave Energy}
+
+\section{Compton Scattering}
+\section{Photoelectric Effect}
+\section{Hydrogen Model}
+\section{De Broglie Waves}
+\section{Wave-Particle Duality}
+\subsection{Uncertainty Principle}
+\subsection{Double Slit Experiment}
+\section{Black Body Radiation}
+
+
+\chapter{Matter Waves and The Schrödinger Equation}
+This problem is basically just $\pmb{A}\vec{x} = \lambda \vec{x}$ as follows:
+$$(\frac{p^2}{2m} + V) \Psi = E\Psi$$
+\begin{itemize}
+\item $p$ is the momentum
+\item $m$ is the mass
+\item $V$ is a conservative field of potential energy..
+\item $E$ is the energy.
+\end{itemize}
+
+\section{Infinite Well}
+This is a pretty common question to ask. The high level explanation is as follows:
+\begin{itemize}
+\item There is a square well of potential energy with infinitely high side walls.
+\item The particle is trapped inside. It cannot tunnel out because of the infinitely high walls.
+\item At the edges of the well and beyond, the wave function must be 0
+\end{itemize}
+This is starting to sound a lot like the boundary conditions for standing waves! You can derive this relationship with a bunch
+of complicated math, but here's the final formula for the energy of each of the possible standing wave pattern that a particle 
+can occupy: 
+$$E_n = \frac{n^2\pi^2\hslash^2}{2mL^2}$$
+Where $n$ is any positive integer, $m$ is the mass of the particle, $L$ is the length of the well. 
+
+\paragraph{The actual equation} for the wave is as follows: $$\Psi(x) = C\sin(Ax)$$
+Where $AL = n\pi$.
+
+\subsection{Superposition}
+When you \textbf{measure} the particle, there is only one energy level $n$ that tells you the frequency of the standing wave and, by extension, 
+the energy at that level.
+
+Before you observe the particle, it has a superposition of a bunch of $n$ values. However, once you observe the particle, it becomes constrained 
+to one $n$ value. This is why the photoelectric effect still has discrete energy levels!
 
 \end{document}
