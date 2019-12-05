@@ -72,17 +72,20 @@
 \contentsline {chapter}{\numberline {9}Quantum}{24}{chapter.9}% 
 \contentsline {section}{\numberline {9.1}Particle Energy, Wave Energy}{24}{section.9.1}% 
 \contentsline {section}{\numberline {9.2}Compton Scattering}{24}{section.9.2}% 
-\contentsline {section}{\numberline {9.3}Photoelectric Effect}{24}{section.9.3}% 
-\contentsline {section}{\numberline {9.4}Hydrogen Model}{24}{section.9.4}% 
-\contentsline {section}{\numberline {9.5}De Broglie Waves}{24}{section.9.5}% 
-\contentsline {section}{\numberline {9.6}Wave-Particle Duality}{24}{section.9.6}% 
-\contentsline {subsection}{\numberline {9.6.1}Uncertainty Principle}{24}{subsection.9.6.1}% 
-\contentsline {subsection}{\numberline {9.6.2}Double Slit Experiment}{24}{subsection.9.6.2}% 
-\contentsline {section}{\numberline {9.7}Black Body Radiation}{24}{section.9.7}% 
-\contentsline {chapter}{\numberline {10}Matter Waves and The Schr\IeC {\"o}dinger Equation}{25}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}Normalization and Probability}{25}{section.10.1}% 
-\contentsline {section}{\numberline {10.2}Energy Considerations}{25}{section.10.2}% 
-\contentsline {paragraph}{Quantum Kinetic and Potential Energy}{25}{section*.23}% 
-\contentsline {section}{\numberline {10.3}Infinite Well}{26}{section.10.3}% 
-\contentsline {paragraph}{The actual equation}{26}{section*.24}% 
-\contentsline {subsection}{\numberline {10.3.1}Superposition}{26}{subsection.10.3.1}% 
+\contentsline {section}{\numberline {9.3}Photoelectric Effect}{25}{section.9.3}% 
+\contentsline {section}{\numberline {9.4}Hydrogen Model}{25}{section.9.4}% 
+\contentsline {section}{\numberline {9.5}De Broglie Waves}{25}{section.9.5}% 
+\contentsline {section}{\numberline {9.6}Wave-Particle Duality}{25}{section.9.6}% 
+\contentsline {subsection}{\numberline {9.6.1}Uncertainty Principle}{25}{subsection.9.6.1}% 
+\contentsline {subsection}{\numberline {9.6.2}Double Slit Experiment}{25}{subsection.9.6.2}% 
+\contentsline {section}{\numberline {9.7}Black Body Radiation}{26}{section.9.7}% 
+\contentsline {chapter}{\numberline {10}Matter Waves and The Schr\IeC {\"o}dinger Equation}{27}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}Normalization and Probability}{27}{section.10.1}% 
+\contentsline {section}{\numberline {10.2}Energy Considerations}{27}{section.10.2}% 
+\contentsline {paragraph}{Quantum Kinetic and Potential Energy}{27}{section*.23}% 
+\contentsline {section}{\numberline {10.3}Infinite Well}{28}{section.10.3}% 
+\contentsline {paragraph}{The actual equation}{28}{section*.24}% 
+\contentsline {subsection}{\numberline {10.3.1}Superposition}{28}{subsection.10.3.1}% 
+\contentsline {section}{\numberline {10.4}Expectation Values}{29}{section.10.4}% 
+\contentsline {section}{\numberline {10.5}Operators}{29}{section.10.5}% 
+\contentsline {section}{\numberline {10.6}Schr\IeC {\"o}dinger's For Free Particle}{29}{section.10.6}% 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  4 DEC 2019 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  5 DEC 2019 03:02
 entering extended mode
 **./PHY293.tex
 (PHY293.tex
@@ -501,29 +501,48 @@ Chapter 8.
 Chapter 9.
 [24
 
-]
+] [25]
+Overfull \hbox (3.84174pt too wide) in paragraph at lines 485--486
+[]\OT1/cmr/m/n/12 When the equation holds true for integer value of $\OML/cmm/m
+/it/12 m$\OT1/cmr/m/n/12 , you get constructive
+ []
+
+
+Overfull \hbox (41.2157pt too wide) in paragraph at lines 491--493
+$\OML/cmm/m/it/12 P$ \OT1/cmr/m/n/12 is the power per square meter of the emitt
+er surface, $\OML/cmm/m/it/12 $ \OT1/cmr/m/n/12 is the emissivity/absorptivity
+
+ []
+
+[26]
 Chapter 10.
-[25
+[27
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
- [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
+Overfull \hbox (7.73337pt too wide) in paragraph at lines 547--549
+\OT1/cmr/m/n/12 calculus, we also know how to get the expected values of things
+ from probability
+ []
+
+[28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 572.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 572.
  (PHY293.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 572.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 572.
 Package rerunfilecheck Info: File `PHY293.out' has not changed.
-(rerunfilecheck)             Checksum: 8A94706316A0F86000CAD1B9AC00B3B1;4422.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
+(rerunfilecheck)             Checksum: 7C55CDF60D1FB11D35F1E4D4115C859A;4630.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 572.
  ) 
 Here is how much of TeX's memory you used:
- 6637 strings out of 494866
- 99855 string characters out of 3176398
+ 6651 strings out of 494866
+ 99986 string characters out of 3176398
  187329 words of memory out of 3000000
- 10108 multiletter control sequences out of 15000+200000
+ 10111 multiletter control sequences out of 15000+200000
  13009 words of font info for 50 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 42i,6n,31p,229b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,6n,31p,229b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
 </Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
 e1/public/amsfonts/cm/cmbx12.pfb></Users/abhargava/Library/Application Support/
 MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/abharga
@@ -544,9 +563,9 @@ nstall/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/abhargava/Library/Appli
 cation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10
 .pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/install/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on PHY293.pdf (27 pages, 250842 bytes).
+Output written on PHY293.pdf (30 pages, 262676 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 545 words of extra memory for PDF output out of 10000 (max. 10000000)
 

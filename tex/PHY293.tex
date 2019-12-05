@@ -435,15 +435,65 @@ $$...$$
 
 \chapter{Quantum}
 \section{Particle Energy, Wave Energy}
+Here is a hodge podge of fun properties about waves (and particles, cause they're waves too). Shoutout to De Broglie.
+\begin{itemize}
+\item Energy of particle/wave with angular frequency: $E = \hslash \omega$
+\item Momentum of particle/wave with angular frequency: $p = \hslash \omega/c$. Now is as good a time as any to tell you that $k=\omega/c$, which is really annoying and confusing.
+\end{itemize}
 
 \section{Compton Scattering}
+When a high energy photon with wavelength $\lambda_0$ collides with an electron, the photon scatters of at angle $\theta$ with respect to its original direction. The wavelength of the photon 
+changes accordingly to $\lambda'$
+
+$$\lambda' - \lambda_0 = \frac{R}{mc}(1-\cos\theta)$$
+\begin{itemize}
+\item $\lambda'$ is the final wavelength of the photon.
+\item $\lambda_0$ is the initial wavelength of the photon.
+\item $R$ is some constant we're given.
+\item $m$ is the mass of the electron.
+\item $c$ is the speed of light.
+\item $\theta$ is the angle of deflection of the photon with respect to it's initial line of attack.
+\end{itemize}
+
 \section{Photoelectric Effect}
+If you yeet some photons at a piece of metal, the electrons get ejected if the energy of the light packets is high enough (if the frequency of light is high enough).
+$$E_x = \hslash \omega - \phi$$
+where $\omega$ is the frequency of light and $\phi$ is the binding energy of the electrons. $E_x$ is the energy of the ejected electrons.
+
 \section{Hydrogen Model}
+$$\omega_{mn}=2\pi R_0 c(\frac{1}{n^2} - \frac{1}{m^2})$$
+
 \section{De Broglie Waves}
+$$\lambda = \frac{h}{p} = \frac{h}{mv}$$
+$$E = \hslash \omega$$
+$$p = \hslash k; \,\,\,\,\,\, k = \omega/c$$
+
 \section{Wave-Particle Duality}
 \subsection{Uncertainty Principle}
+$$\Delta x\Delta p_x \geq 2\pi \hslash$$
+$$$$
 \subsection{Double Slit Experiment}
+If you shine a laser through two slits (or anything really), the two slits will act as sources of the exact same frequency light and they will 
+interfere with eachother to create some diffraction patterns on wall. Difference in path length being an integer multiple of the wavelength makes 
+constructive interference, difference in path length of half makes for destructive.
+
+$$m \lambda = d\sin \theta$$
+Where \begin{itemize}
+\item $m$ is some integer (0 is the central node, 1 is the next, etc.)
+\item $\lambda$ is the wavelength of light (or particles) coming through.
+\item $d$ is the distance between the slits.
+\item When the equation holds true for integer value of $m$, you get constructive point. If it's an integer and a half, it's a destructive point.
+\end{itemize}
+
+
 \section{Black Body Radiation}
+A body absorbs and emits radiation with the exact same efficiency for any given frequency. A black body is a perfect absorber and perfect emitter. 
+$$P=\sigma T^4$$
+$P$ is the power per square meter of the emitter surface, $\sigma$ is the emissivity/absorptivity constant, and $T$ is the temperature.
+
+$$f_{max} \propto T$$
+In other words, the frequency of radiation that is absorbed/emitted most is proportional to temperature.
+
 
 
 \chapter{Matter Waves and The Schrödinger Equation}
@@ -492,5 +542,31 @@ the energy at that level.
 
 Before you observe the particle, it has a superposition of a bunch of $n$ values. However, once you observe the particle, it becomes constrained 
 to one $n$ value. This is why the photoelectric effect still has discrete energy levels!
+
+\section{Expectation Values}
+Honestly you can get this from our vector calculus course pretty well. We know that the probability distribution is given by $P = |\psi^2|$. From vector calculus, 
+we also know how to get the expected values of things from probability distributions. They like to write this with annoying complex conjugates but it's the same thing.
+$$\langle x \rangle = \int_{-\infty}^{\infty}\psi^* x \psi dx = \int_{-\infty}^{\infty}|\psi^2| x dx = \int_{-\infty}^{\infty}P(x) x \psi dx$$
+
+So yeah, nothing really to worry about. Same stuff different variable names.
+
+\section{Operators}
+Operators are applied to the wave function $\Psi$ to get physical values out of the wave function. For some reason, those values are called eigenvalues. Whatever. 
+Here are the operators.
+\begin{enumerate}
+\item Position operator $\hat{x}$: $\hat{x}\Psi = x\Psi; \hat{r}\Psi=r\Psi$
+\item Momentum operator: $\hat{p}$: $\hat{p}_x=-i\hslash\frac{\partial}{\partial x}$
+\item Kinetic energy operator: $\hat{K}$: $\hat{K}=-\frac{\hslash^2}{2m}\nabla^2$
+\item Total energy operator: $\hat{H}$: $\hat{H} = \hat{K} + \hat{U}$
+\item Potential energy is just from any fields of potential energy the particle happens to be riding on.
+\end{enumerate}
+
+\section{Schrödinger's For Free Particle}
+Remember the general traveling wave equation? Yup, it's back baby!
+$$\Psi=Acos(kx-\omega t)+iAsin(kx-\omega t)$$
+And here's how you get all those parameter values:
+$$p=\hslash k; \,\,\,K=\frac{1}{2}mv^2;\,\,E=\hslash\omega$$
+Just remember that $k$ and $K$ are different things ($k$ is the spatial frequency, $K$ is the kinetic energy of the particle). 
+
 
 \end{document}
