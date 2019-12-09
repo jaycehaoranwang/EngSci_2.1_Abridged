@@ -317,10 +317,94 @@ etc.
 
 $$I_x = \iiint_E (y^2 + z^2) \rho(x,y,z)dV$$
 
-% TODO: Populate the rest of this section
+\section{Cylindrical Coordinates}
+These work pretty much how you would think they'd work based on your knowledge of polar coordiantes in 2-D. Just stick a
+conventional z-axis on the polar coordinate system and you have cylindrical coordinates.
+
+$$x = r\cos\theta; \,\,\,\, y = r\sin\theta; \,\,\,\, z = z$$
+$$\iiint_E f(x, y, z) dV = \iiint r f(r\cos(\theta), r\sin(\theta), z) dz\,dr\,d\theta$$
+
+Don't forget that little $r$ coefficient in there! 
+
+\section{Spherical Coordinates}
+Now we define points in 3-D space by the the following values: 
+\begin{enumerate}
+\item $p$: the distance away from the origin (scalar)
+\item $\theta$: angle from 0 of the point when it's projected onto the x-y plane.
+\item $\psi$: The angle from the z-axis.
+\end{enumerate}
+So yeah, a bit of a pain in the ass to visualize and draw. At least it's useful when they give you literal spheres... 
+
+Anyway, here are the relationships between those newfangled varibles and our trusty old $x, y, z$ system:
+\begin{enumerate}
+\item $x = p\sin\phi\cos\theta$
+\item $y = p\sin\phi\sin\theta$
+\item $z = p\cos\phi$
+\item $p = \sqrt{x^2+y^2+z^2}$
+\end{enumerate}
+
+Finally, here's the conversion formula for triple integrals:
+$$\iiint_E f(x, y, z) dV = \iiint f(p\sin(\phi)\cos(\theta), p\sin(\phi)\sin(\theta), p\cos(\theta)) p^2\sin(\phi) dp\,d\theta\,d\phi $$
+
+\section{Taylor Series with Two Variables}
+...
+
+\section{Jacobians}
+Remember that time when $\int_a^b f(x) dx = \int_c^d f(g(u))\frac{dx}{du} du$? Well imagine if we could do that with 
+multiple integrals. How cool would that be?
+
+Well guess what, we've been doing that for a while now! Whenever we transfer to cylindrical and spherical coordinates we're 
+basically just applying that same rule. The only new thing we have to learn is the equivalent of that $\frac{dx}{du}$ bit when 
+you have multiple independent variables. 
+
+\subsection{How it Works}
+Let $(u, v) = (G(x, y), H(x, y))$ be our transformation we want to use to make the integral easier. And, let's say we 
+want to change the followinig: 
+
+$$\iint_V f(x, y) dx\,dy \to \iint_{V_2} f(u, v) du\,dv$$
+
+All we gotta do is apply the same rule that we're used to using for u-substitutions, but the $\frac{dx}{du}$ term becomes:
+$$
+\frac{\partial (x, y)}{\partial (u, v)} = \det 
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\ 
+\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}  \notag
+\end{vmatrix}
+$$
+
+You can kind of see where that Jacob guy was coming from. It sort of makes sense that 
+$\Delta A \approx |\frac{\partial (x, y)}{\partial (u, v)}| du\, dv$. 
+
+\subsection{How to Change your Variable with Jacobians}
+$$\iint_R f(x, y) dA = \iint_S f(x(u, v), y(u, v))|\frac{\partial (x, y)}{\partial (u, v)}|du\,dv$$
+
+This applies to n-dimensional integrals. You can double check that the transformations to cylindrical and spherical coordinates 
+work out if you want!
 
 \chapter{Vector Calculus}
 \section{Review: Vector Fields, Gradient Fields}
+\subsection{Vector Fields}
+Let $E$ be a subset of $\mathbb{R}^3$. A vector field on $\mathbb{R}^3$ is $F$ that assigns each 
+$(x, y, z) \in \mathbb{R}^3$ to a 3D vector $F(x, y, z)$.
+
+\subsection{Gradient Fields}
+The gradient operator is represented by $\nabla$ and can be viewed as the operator 
+$$
+\begin{bmatrix}
+\frac{\partial }{\partial x} \\ 
+\frac{\partial }{\partial y} \\
+\frac{\partial }{\partial z} \\
+... \notag
+\end{bmatrix}
+$$
+
+A scalar field transforms each point $(x, y, ...) \in \mathbb{R}^n$ into a real number in $\mathbb{R}$ (e.g. $f(x, y, ...) \to \mathbb{R}$).
+A gradient field is a field of $n$-dimensional vectors that is made by taking the gradient of $f$ at each point $(x, y, z, ...)$ in 
+a given region $\nabla f(x, y, z, ...)$.
+
+These differ from regular vector fields because \textbf{not every vector field can be made from the gradient of a scalar field}.
+Think about that, it's really cool!
+
 \section{Line Integrals}
 From Stewart 16.2: It's like a regular integral, but we're integrating over a curve, not a 
 range of values.
@@ -328,7 +412,9 @@ range of values.
 along $C$ is $$\int_C f(x, y) ds = \int_a^b f(x(t), y(t)) \sqrt{(\frac{dx}{dt})^2 + (\frac{dy}{dt})^2} dt$$
 
 Visually it's just like taking the single integral along the path $<x(t), y(t)>$ as opposed to a straight line 
-along the $x$ or $y$ axis.
+along the $x$ or $y$ axis. More generally: 
+
+$$\int_C f(\vec{r}(t)) ds = \int_C f(\vec{r}(t))|r'(t)|dt$$
 
 \subsection{Line Integrals with respect to $x$ and $y$}
 You can also take the integral with respect to differences in $x$ and $y$ instead of with respect to 
@@ -337,9 +423,16 @@ $s$ (the arc length).
 $$\int_C f(x, y) dx = \int_a^b f(x(t), y(t)) x'(t) dt$$
 $$\int_C f(x, y) dy = \int_a^b f(x(t), y(t)) y'(t) dt$$
 
+Physically, that means that the `significance' of an infinitessimal part of the line is decided by the $x$ or $y$-component 
+of the piece of the line. 
+
 A shorthand for adding these together is as follows: 
 $$\int_C P(x, y) dx + \int_C Q(x, y) dy = \int_C P(x, y) dx Q(x, y) dy$$
 
+\subsection{Path Independence}
+It is not necessarily the case that $$\int_C f(x, y) dx = -\int_{-C}f(x, y) dx$$
+However, when we take the line integral with respect to $s$ (path length), equality does hold! 
+$$\int_C f(x, y) ds = -\int_{-C}f(x, y)ds$$
 
 \subsection{Line Integrals in Space}
 This section pertains to 3D space. Let $C$ be a smooth space curve given by $<x(t), y(t), z(t)>$ for $a \leq t \leq b$
@@ -360,8 +453,9 @@ Now we think of $F(x, y, z) = <p(x), q(y), r(z)>$ as a force field in 3-space. H
 the force field on a moving particle?
 
 $$W = \int_a^b F(r(t)) \cdot r'(t) dt = \int_C F \cdot T ds$$
-Remembering that $F(r(t)) = F(x(t), y(t), z(t))$, so 
+Remembering that $F(r(t)) = F(x(t), y(t), z(t)) = [P, Q, R]$, so 
 $$\int_C F \cdot dr = \int_C P\,dx + Q\,dy + R\,dz$$
+
 
 
 
@@ -387,6 +481,36 @@ is a differentiable function of 2-3 variables with a continuous gradient on C.
 
 $$\int_C \nabla f \cdot dr = f(r(b)) - f(r(a))$$
 
+\subsection{Path Independence}
+Here are some fun theorems to understand and have in the back of your mind: 
+\begin{enumerate}
+\item \textbf{THM: } $\int_C \vec{F}\cdot\,d\vec{r}$ is path independent iff 
+$\int_C \vec{F}\cdot\,d\vec{r} = 0 \, \forall$ closed paths
+\item \textbf{THM: } A vector field is conservative iff it is path independent. 
+$\exists$ a function $f$ such that $\nabla f = F$ iff conservative/path independent.
+\item \textbf{THM: } if $\vec{F}(x, y) = [P(x, y)\hat{i}, Q(x, y)\hat{j}]$ is conservative, 
+then $$\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$$ assuming $P, Q$ have cts first derivatives and 
+the region is \textit{simply connected}.
+\end{enumerate}
+
+Some useful definitions:
+\begin{enumerate}
+\item A \textbf{simple curve} doesn't intersect itself between the ends.
+\item A \textbf{simply connected region} has every simple, closed curve enclose only points in that region $D$.
+\end{enumerate}
+
+\section{Green's Theorem}
+Provides a relationship between the line integral of a \textbf{simple closed curve $C$} and the \textbf{double integral of 
+region $D$ that is bounded by $C$}. 
+
+\paragraph{Note on orientation: } We assume a \textbf{SINGLE, COUNTERCLOCKWISE} traversal of $C$. The region is `to the left' 
+of $r(t)$ as it traverses $C$.
+
+$$\int_C P\,dx+Q\,dy = \iint_D (\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})dA$$
+
+It's kind of the counterpart to $\int_a^b F'(x) dx = F(b)-F(a)$.
+
+\section{Curl and Divergence}
 
 \end{document}
 

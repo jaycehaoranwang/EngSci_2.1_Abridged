@@ -37,11 +37,23 @@
 \BOOKMARK [2][-]{subsection.3.6.2}{Type 2}{section.3.6}% 37
 \BOOKMARK [2][-]{subsection.3.6.3}{Type 3}{section.3.6}% 38
 \BOOKMARK [2][-]{subsection.3.6.4}{Applications of Triple Integrals}{section.3.6}% 39
-\BOOKMARK [0][-]{chapter.4}{Vector Calculus}{}% 40
-\BOOKMARK [1][-]{section.4.1}{Review: Vector Fields, Gradient Fields}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.2}{Line Integrals}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.2.1}{Line Integrals with respect to x and y}{section.4.2}% 43
-\BOOKMARK [2][-]{subsection.4.2.2}{Line Integrals in Space}{section.4.2}% 44
-\BOOKMARK [2][-]{subsection.4.2.3}{Line Integrals of Vector Fields}{section.4.2}% 45
-\BOOKMARK [2][-]{subsection.4.2.4}{Useful Tips}{section.4.2}% 46
-\BOOKMARK [1][-]{section.4.3}{Fundamental Theorem of Line Integrals}{chapter.4}% 47
+\BOOKMARK [1][-]{section.3.7}{Cylindrical Coordinates}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.8}{Spherical Coordinates}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.9}{Taylor Series with Two Variables}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.10}{Jacobians}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.10.1}{How it Works}{section.3.10}% 44
+\BOOKMARK [2][-]{subsection.3.10.2}{How to Change your Variable with Jacobians}{section.3.10}% 45
+\BOOKMARK [0][-]{chapter.4}{Vector Calculus}{}% 46
+\BOOKMARK [1][-]{section.4.1}{Review: Vector Fields, Gradient Fields}{chapter.4}% 47
+\BOOKMARK [2][-]{subsection.4.1.1}{Vector Fields}{section.4.1}% 48
+\BOOKMARK [2][-]{subsection.4.1.2}{Gradient Fields}{section.4.1}% 49
+\BOOKMARK [1][-]{section.4.2}{Line Integrals}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.2.1}{Line Integrals with respect to x and y}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.2}{Path Independence}{section.4.2}% 52
+\BOOKMARK [2][-]{subsection.4.2.3}{Line Integrals in Space}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.4}{Line Integrals of Vector Fields}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.5}{Useful Tips}{section.4.2}% 55
+\BOOKMARK [1][-]{section.4.3}{Fundamental Theorem of Line Integrals}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.3.1}{Path Independence}{section.4.3}% 57
+\BOOKMARK [1][-]{section.4.4}{Green's Theorem}{chapter.4}% 58
+\BOOKMARK [1][-]{section.4.5}{Curl and Divergence}{chapter.4}% 59
