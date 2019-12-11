@@ -900,6 +900,28 @@ to the actual top of the stack that also holds the saved registers).
 \paragraph{FRAME POINTER FP } is a constant for the duration of the subroutine program. It is equal to the STACK POINTER SP 
 at the beginning of the subroutine call.
 
+\section{Flags and Conditionals}
+You pretty much always want to branch/call a subroutine on a conditional. Here's who they work:
+\subsection{Comparisons}
+\textbf{CMP R2, R1} lets you compare the values of two things. It performs the operation $R2 - R1$ and stores attributes of the result in global \textbf{FLAGS}
+\subsection{Flags}
+Flags are values you can use to branch. They store attributes of the previous comparison or operation.
+\begin{enumerate}
+\item $N$: If the result was negative.
+\item $Z$: If the result was zero.
+\item $C$: If the result of an unsigned operation overflows. 
+\item $V$: If the result of a signed operation overflows.
+\end{enumerate}
+
+The following Assembly directives make use of the previous comparison's flags:
+\begin{enumerate}
+\item $BEQ$: If the previous comparison yielded equality.
+\item $BLT$: If the previous comparison yielded less than.
+\item $BGT$: If the previous comparison yielded greater than.
+\end{enumerate}
+
+
+
 \chapter{IO Devices}
 You access IO devices in the same way you might access regular registers. The \textbf{device interface} gives you a few registers that 
 allow you to communicate:
@@ -987,5 +1009,39 @@ Since all registers are 1 word long, you can generally have 32 IO devices.
 
 In order to read and write from PROCESSOR CONTROL REGISTERS, you treat them like regular registers. 
 
+\chapter{Closing Remarks}
+\section{Multiplexer Synethesis}
+You can make any logical circuit out of a bunch of multiplexers. The naïve aproach is to have the actual inputs of the 
+multiplexer be constants and the selector inputs be your inputs to the function. 
+
+\paragraph{Shannon's Expansion } allows you to further simplify your naïve multiplexer layout:
+$$f(w_1, ... , w_n) = \bar{w}_1\cdot f(0, w_2, ..., w_n) + w_1 \cdot f(1, w_2, ..., w_n)$$
+
+\section{Timing Considerations for Flip Flop Circuits}
+We need to know $F_{max}$, the maximum frequency at which we can run our clocks when using a flip flop.
+
+\paragraph{Hold time violation } is 
+\paragraph{Timing parameters } 
+\begin{itemize}
+\item $t_{su}$: \textbf{Set up time} while data D must be stable for a D-latch or D-fip flop. 
+\item $t_h$: Data must stay stable during \textbf{hold time}
+\item $t_{cQ}$: Time from \textbf{clock signal to Q} for a flip flop.
+\end{itemize}
+
+\paragraph{To get clock's $T_{min}$}, you add up the maximum required time for a signal to propagate through the circuit. 
+
+\subsection{Clock Skew}
+Clock signal might not arrive at different flip flops at the same time. 
+
+\paragraph{$t_{skew}$} = time of arrival at sink - time of arrival at source.
+
+If skew time is positive, you can have a higher $F_max$. Negative leads to lower $F_max$. 
+
+\subsection{Process for Timing Analysis}
+\begin{enumerate}
+\item Calculate longest path the signal must traverse during a clock cycle. $T_{min} \geq T_{longest_path}$
+\item Calculate hold time violation (which is the time the data must be constant for the latch to `save' the data). 
+\item Calculate time violation: 
+\end{enumerate}
 
 \end{document}

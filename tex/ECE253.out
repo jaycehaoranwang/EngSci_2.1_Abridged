@@ -71,14 +71,22 @@
 \BOOKMARK [2][-]{subsection.9.8.1}{Subroutine Nesting}{section.9.8}% 71
 \BOOKMARK [2][-]{subsection.9.8.2}{Parameter Passing}{section.9.8}% 72
 \BOOKMARK [2][-]{subsection.9.8.3}{Stack Frame}{section.9.8}% 73
-\BOOKMARK [0][-]{chapter.10}{IO Devices}{}% 74
-\BOOKMARK [1][-]{section.10.1}{Program Control IO}{chapter.10}% 75
-\BOOKMARK [1][-]{section.10.2}{Interrupts}{chapter.10}% 76
-\BOOKMARK [2][-]{subsection.10.2.1}{Notes on SUBROUTINE INTERRUPT IMPLEMENTATION: }{section.10.2}% 77
-\BOOKMARK [2][-]{subsection.10.2.2}{Enable and Disabling Interrupts}{section.10.2}% 78
-\BOOKMARK [2][-]{subsection.10.2.3}{Process for a Single Device Interrupt Call}{section.10.2}% 79
-\BOOKMARK [1][-]{section.10.3}{Multiple Device Interrupts}{chapter.10}% 80
-\BOOKMARK [2][-]{subsection.10.3.1}{Approach One: Na\357ve Polling}{section.10.3}% 81
-\BOOKMARK [2][-]{subsection.10.3.2}{Vectored Inputs}{section.10.3}% 82
-\BOOKMARK [2][-]{subsection.10.3.3}{Interrupt Nesting}{section.10.3}% 83
-\BOOKMARK [1][-]{section.10.4}{Processor Control Register}{chapter.10}% 84
+\BOOKMARK [1][-]{section.9.9}{Flags and Conditionals}{chapter.9}% 74
+\BOOKMARK [2][-]{subsection.9.9.1}{Comparisons}{section.9.9}% 75
+\BOOKMARK [2][-]{subsection.9.9.2}{Flags}{section.9.9}% 76
+\BOOKMARK [0][-]{chapter.10}{IO Devices}{}% 77
+\BOOKMARK [1][-]{section.10.1}{Program Control IO}{chapter.10}% 78
+\BOOKMARK [1][-]{section.10.2}{Interrupts}{chapter.10}% 79
+\BOOKMARK [2][-]{subsection.10.2.1}{Notes on SUBROUTINE INTERRUPT IMPLEMENTATION: }{section.10.2}% 80
+\BOOKMARK [2][-]{subsection.10.2.2}{Enable and Disabling Interrupts}{section.10.2}% 81
+\BOOKMARK [2][-]{subsection.10.2.3}{Process for a Single Device Interrupt Call}{section.10.2}% 82
+\BOOKMARK [1][-]{section.10.3}{Multiple Device Interrupts}{chapter.10}% 83
+\BOOKMARK [2][-]{subsection.10.3.1}{Approach One: Na\357ve Polling}{section.10.3}% 84
+\BOOKMARK [2][-]{subsection.10.3.2}{Vectored Inputs}{section.10.3}% 85
+\BOOKMARK [2][-]{subsection.10.3.3}{Interrupt Nesting}{section.10.3}% 86
+\BOOKMARK [1][-]{section.10.4}{Processor Control Register}{chapter.10}% 87
+\BOOKMARK [0][-]{chapter.11}{Closing Remarks}{}% 88
+\BOOKMARK [1][-]{section.11.1}{Multiplexer Synethesis}{chapter.11}% 89
+\BOOKMARK [1][-]{section.11.2}{Timing Considerations for Flip Flop Circuits}{chapter.11}% 90
+\BOOKMARK [2][-]{subsection.11.2.1}{Clock Skew}{section.11.2}% 91
+\BOOKMARK [2][-]{subsection.11.2.2}{Process for Timing Analysis}{section.11.2}% 92
