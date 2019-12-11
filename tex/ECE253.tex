@@ -682,7 +682,310 @@ endmodule
 
 
 
+\chapter{Introduction to Microprocessors}
+\section{Computer Organization}
+\paragraph{A computer } can read, write, and process data. In order to do so, it has the following main parts:
+\begin{enumerate}
+\item Input/Output Devices
+\item Memory
+\item Processor (includes Arithmetic Logic Unit and Control Unit)
+\end{enumerate}
+All of these are connected through an \textbf{interconnection network}.
+\subsection{Memory Unit}
+The memory unit can be broken into three main pieces. Overall, it functions to \textbf{store programs} and \textbf{data}. 
+\subsubsection{Primary Memory}
+\begin{itemize}
+\item Stores programs
+\item Relatively fast, called `main memory'
+\item Made of a collection of \textbf{bit registers}
+\end{itemize}
+The bit registers in memory are read and written in \textbf{WORDS}. Each word has its own address (consecuitive numbers) and a standardized number 
+of bits. 
 
+\subsubsection{Cache}
+\begin{itemize}
+\item Smaller, faster RAM unit (RAM = Random Access Memory, all can be accessed at the same speed).
+\item Holds current parts of a program.
+\item Packaged with the processor $\to$ faster to access information from here than from memory.
+\end{itemize}
+
+\subsubsection{Secondary Storage}
+Basically just external drives.
+
+\subsection{Arithmetic Logic Unit (ALU)}
+Most operations are executed here ($+, -, /, \cdot, \leq, \geq, >, <$). Operands are passed here via \textbf{registers}. Registers are 
+1 word long and are very fast to access.
+
+\subsection{Control Unit}
+Coordinates the rest of the units. Usually distributed throughout the compter. The following main types of operations are coordinated by this unit:
+\begin{enumerate}
+\item Storing information in memory as programs and data.
+\item Moving information to memory for the ALU to process.
+\item Moving processed information to the output unit.
+\end{enumerate}
+
+\chapter{Basic Concepts in Microprocessors}
+\section{Basic Concepts}
+\lstset{frame=tb,
+  language=verilog,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{lstlisting}
+LOAD     R2, LOC     // Copies data from main memory into a register. 
+ADD      R4, R2, R3  // R4 = R2 + R3 (contents)
+STORE    R4, LOC     // Copies data from a REGISTER to main memory.
+
+MOVE     R2, R4      // Copy contents of R4 to R2
+CLEAR    R2          // Set contents of R2 to be 0
+ADD      R2, R2, R4  // R2 = R2 + R4
+SUB // Same as add but subtraction
+MULTIPLY
+DIVIDE
+
+
+AND      R4, R2, R3  // R4 = R2 & R3
+OR
+NOT
+\end{lstlisting}
+
+The processor's \textbf{PROGRAM COUNTER} (PC) holds the address of the next instruction. Each instruction is 1 word in RISC computers.
+
+\section{Memory Locations and Addresses}
+1 cell is 1 bit, and n cells is 1 word. Memory is a collection of words, usually from 16-64.
+\paragraph{Address spaces: } The possible addresses in a $k$-bit address space range from $0\to 2^{k}-1$
+\paragraph{Byte-addressable memory } indexes each byte (8 bits) with an integer $0, 1, 2... n$. Therefore, in a 32-bit word system, 
+the address of each word is $0, 4, 8, 12, ...$ in byte addressible memory.
+
+\textbf{Big endian} means that the lower byte address has the more significant digit while \textbf{little endian} holds the oppoiste.
+
+\subsection{Memory Operations}
+READ and WRITE are the main operations. 
+
+\begin{itemize}
+\item READing copies the contents of a memory location to a processor register. This is done by specifying 
+the address in memory that the processor wants to read. 
+\item WRITing involves copying the contents of a processor register to a particular 
+place in memory. The process sends the address it wishes to write to and the data it wants to write there.
+\end{itemize}
+
+\section{Instruction Sequencing}
+There are 4 operations needed for running a computer program:
+\begin{enumerate}
+\item Data transfers between memory and process (READ and WRITE)
+\item Arithmetic and logic operators
+\item Program sequencing and control (branching, subroutines, etc.)
+\item Input and Output
+\end{enumerate}
+
+\subsection{RISC and CISC Instructions}
+\paragraph{RISC: } Each instruction is 1 word long. All arguments must be in registers already.
+\paragraph{CISC: } Each instruction can be $\geq$ 1 word long. This enables more complex operations.
+
+\section{Branching}
+So far we have talked about \textbf{straight line sequencing}. Instructions are executed in the exact order they are written. But what 
+if we want to loop?
+
+\begin{lstlisting}
+// Some computation
+BGT      R4, R5, LOOP      // Go to LOOP if R4 > R5
+// Stuff to be executed if R4 <= R5...
+
+LOOP:
+   // To be executed if R4 > R5
+
+// SIDE NOTE: This is how you use constants:
+SUBTRACT R2, R2, #1 // R2 = R2 - 1
+\end{lstlisting}
+
+\section{Addressing Modes}
+% So far we have used register modes ($R2$) and absolute modes ($#1$). 
+A register holding the address of some information in memory is a \textbf{pointer}. Using pointers is called 
+the \textit{indirect addressing mode}. 
+\begin{lstlisting}
+LOAD     R2, R5         // Loads the stuff from the MEMORY ADDRESS that R5 holds into R2.
+MOVE     R2, R5         // Puts the IMMEDIATE VALUE held in R5 into R2.
+MOVE     R2, #300       // R2 = 300;
+CLEAR    R2             // CLEARS R2 to 0's.
+
+ADD      R4, R0, #200   // R0 usually holds 0's. This what MOVE really does.
+\end{lstlisting}
+
+\paragraph{Index mode } of addressing is when you use an address register to hold the address of the first word in a list. 
+\begin{lstlisting}
+// Memory address is equal to some value X (let's say address #96 in memory) plus a register value at Ri 
+X(Ri) // This is how you address that memory address.
+\end{lstlisting}
+
+\section{More on Assembly}
+\begin{lstlisting}
+TWENTY   EQU   20 // Whenever the assembler sees `TWENTY' it will be replaced by 20.
+
+ORIGIN   100      // Inser this at the beginning of a block to specify that code below should be placed in memory starting at address #100
+
+SUM   :  Reserve  4  // 4-byte space reserved @ address 100
+N     :  Dataword    // N = #150 @ address 204
+End // ends the program.
+
+%10110101 // how to specify numbers in binary 
+0x5f      // hot to specify number in hex
+\end{lstlisting}
+
+\section{Stacks}
+Same common datastructure we ran into before in CSC190. Only one end can be read/added to, and it's LIFO (last in, first out).
+
+\paragraph{The Stack Pointer (SP)} points to the address of the end of the stack (Processor stack). Common practice: stack grows in direction of 
+\textit{decreasing memory addresses}. 
+The push operation works as follows (pushing word in $R_i$):
+\begin{lstlisting}
+SUB         SP, SP, #4     // Decrementing stack pointer by 4 bytes (1 word).
+STORE       Ri, SP
+// Now the pop operator:
+LOAD        Ri, SP
+ADD         SP, SP, #4
+\end{lstlisting}
+
+\section{Subroutines}
+Same as a function. Uses branching, but it knows that it has to return to where it was called from. We use the \textbf{RETURN} command 
+to return to the calling place. The address of the calling place is stored in the \textbf{LINK REGISTER}.
+
+\begin{lstlisting}
+CALL        FUNCNAME       // Stores current PROGRAM COUNTER in LINK REGISTER, branches to subroutine.
+// .. some code ..
+FUNCNAME: 
+   // .. some code ..
+   RETURN                  // Branches back to address stored in LINK REGISTER
+\end{lstlisting}
+
+\subsection{Subroutine Nesting}
+If you call a function in a function, the LINK REGISTER can only hold one address at a time. Since we need LIFO structure to 
+tell us where to branch back to at each successive return, we use the \textbf{PROCESSOR STACK} to store the further addresses.
+
+\paragraph{Process for calling a nested function: }
+\begin{enumerate}
+\item Return address in LR $\to$ PROCESSOR STACK @SP.
+\item Store current address in LR and branch to the next function.
+\item When you return from the nested function, transfer the original LR pointer back from PROCESSOR STACK @SP.
+\item Return as normal to address in LR when you're done with the original subroutine.
+\end{enumerate}
+
+\subsection{Parameter Passing}
+This can be done with registers or via the \textbf{PROCESSOR STACK}. Here are the steps for the PROCESSOR STACK approach:
+\begin{enumerate}
+\item Push the arguments you want to pass to the stack in the caller.
+\item Once in the subroutine, save the contents of current registers to the stack to preserve the state of the calling program.
+\item Use an offset equal to the number of SAVED REGISTERS to access passed variables.
+\item Carry out the subroutine.
+\item Restore the disturbed registers from the stack (pop them off).
+\item Branch back to the address of the caller and re-establish the SP to what it was originally.
+\end{enumerate}
+
+\subsection{Stack Frame}
+\paragraph{Definition: } The Stack Frame is the space allocated to a subroutine when it is called. It is useful to 
+have a \textbf{FRAME POINTER} that points to just above the PASSED PARAMETERS (unlike the STACK POINTER SP that points 
+to the actual top of the stack that also holds the saved registers). 
+
+\paragraph{FRAME POINTER FP } is a constant for the duration of the subroutine program. It is equal to the STACK POINTER SP 
+at the beginning of the subroutine call.
+
+\chapter{IO Devices}
+You access IO devices in the same way you might access regular registers. The \textbf{device interface} gives you a few registers that 
+allow you to communicate:
+\begin{enumerate}
+\item Data
+\item Status
+\item Control
+\end{enumerate}
+
+\section{Program Control IO}
+You use a program called a \textbf{Program Control Interface} to write and control an IO device. 
+
+Because the processor, input, and output devices may work at different rates, you need to wait for a response to any signal you 
+send to one to make sure it's ready for the next one. These are called \textbf{STATUS FLAGS}, and reading them is called \textbf{POLLING}. 
+
+
+\section{Interrupts}
+You can use the infinite loop approach where you just keep POLLING the STATUS FLAG of an IO device until it's ready. That takes a lot of 
+compute power and you can't do anything during the wait time, which is a problem.
+
+\paragraph{INTERRUPT SERVICE ROUTINE } is called by an interrupt signal from an IO device. Here is the processor's steps for dealing with one.
+\begin{enumerate}
+\item The processor finishes instruction $i$ that it is in the middle of.
+\item The processor branches to the INTERRUPT ROUTINE. PC $\to$ PROCESSOR STACK.
+\item The INTERRUPT ROUTINE is executed.
+\item The PC is restored from the PROCESSOR STACK.
+\end{enumerate}
+
+\subsection{Notes on SUBROUTINE INTERRUPT IMPLEMENTATION: } 
+At the beginning of the subroutine, the processor must send an \textbf{INTERRUPT ACKNOWLEDGE} make sure that, when the subroutine RETURNS, 
+an infinite loop does not occur. Alternatively, the successful execution of the subroutine can implicitly notify the IO device.
+
+\paragraph{REGISTERS MUST BE RESTORED } because you don't know when the interrupt subroutine will be executed. It could be in the middle of another 
+very sensitive subroutine. 
+
+\subsection{Enable and Disabling Interrupts} 
+Sometimes you don't want to branch away from the main progam. Therefore, the processor has some STATUS REGISTERS PS that have a bit INTERRUPT INABLE IE 
+that, when set to 0, disable interrupts.
+
+\textbf{You must set this } to 0 while inside the subroutine to avoid an infinite loop.. 
+
+\paragraph{IO MODE } bit in the control interface of the IO device can also allow you to set whether it sends interrupts or not.
+
+\subsection{Process for a Single Device Interrupt Call}
+\begin{enumerate}
+\item Device raises interrupt
+\item Processor branches to the interrupt subroutine
+\item STATUS REGISTER PS is saved to the stack, along with the PROGRAM COUNTER PC.
+\item STATUS REGISTER PS has INTERRUPT ENABLE IE that is set to 0. 
+\item Subroutine runs.
+\item STATUS REGISTER PS is restored from the saved version. 
+\end{enumerate}
+
+\section{Multiple Device Interrupts}
+The above system works fine when you just have one interrupt at a time or one device performing the interrupts. 
+
+\subsection{Approach One: Naïve Polling}
+You can just do the same thing as before, just executing the interrupts in the order you poll them if they happen to come at the same time. However, 
+polling takes time.
+
+\subsection{Vectored Inputs}
+If you allow the interruptor to send a message along with their interrupt, you can have code in the processor that tells it how to 
+interpret the signal.
+
+\paragraph{INTERRUPT VECTOR TABLE } is stored (usually in the lowest address range). The information in a vectored interrupt contains the 
+address of one of the vectors in that table. The contents of that vector in the table is the address of the interrupt subroutine.
+
+\subsection{Interrupt Nesting}
+If an interrupt comes in while executing another interrupt's subroutine, there's a chance that it will be of higher priority. Therefore, 
+we need an interrupt priority system.
+
+\paragraph{PROCESSOR PRIORITY } is the priority of the current process. Only interrupts with a higher priority are executed. Priority is
+communicated in the interrupt vector. 
+
+\section{Processor Control Register}
+We already know that the INTERRUPT ENABLE IE bit is in the PROCESSOR STATUS register which is one of the PROCESSOR CONTROL REGISTERS.
+
+IPS is where PS is saved automatically at the start of an interrupt. PS is autorestored from here at the end.
+
+IENABLE register enables device specific INTERRUPT ENABLE bits. 
+
+IPENDING register shows which interrupts are active. 
+
+Since all registers are 1 word long, you can generally have 32 IO devices. 
+
+In order to read and write from PROCESSOR CONTROL REGISTERS, you treat them like regular registers. 
 
 
 \end{document}

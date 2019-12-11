@@ -52,3 +52,33 @@
 \BOOKMARK [2][-]{subsection.7.1.3}{Case Statements}{section.7.1}% 52
 \BOOKMARK [2][-]{subsection.7.1.4}{State Machine Diagrams and Sequantial Diagrams}{section.7.1}% 53
 \BOOKMARK [2][-]{subsection.7.1.5}{Case Statements for State Machines}{section.7.1}% 54
+\BOOKMARK [0][-]{chapter.8}{Introduction to Microprocessors}{}% 55
+\BOOKMARK [1][-]{section.8.1}{Computer Organization}{chapter.8}% 56
+\BOOKMARK [2][-]{subsection.8.1.1}{Memory Unit}{section.8.1}% 57
+\BOOKMARK [2][-]{subsection.8.1.2}{Arithmetic Logic Unit \(ALU\)}{section.8.1}% 58
+\BOOKMARK [2][-]{subsection.8.1.3}{Control Unit}{section.8.1}% 59
+\BOOKMARK [0][-]{chapter.9}{Basic Concepts in Microprocessors}{}% 60
+\BOOKMARK [1][-]{section.9.1}{Basic Concepts}{chapter.9}% 61
+\BOOKMARK [1][-]{section.9.2}{Memory Locations and Addresses}{chapter.9}% 62
+\BOOKMARK [2][-]{subsection.9.2.1}{Memory Operations}{section.9.2}% 63
+\BOOKMARK [1][-]{section.9.3}{Instruction Sequencing}{chapter.9}% 64
+\BOOKMARK [2][-]{subsection.9.3.1}{RISC and CISC Instructions}{section.9.3}% 65
+\BOOKMARK [1][-]{section.9.4}{Branching}{chapter.9}% 66
+\BOOKMARK [1][-]{section.9.5}{Addressing Modes}{chapter.9}% 67
+\BOOKMARK [1][-]{section.9.6}{More on Assembly}{chapter.9}% 68
+\BOOKMARK [1][-]{section.9.7}{Stacks}{chapter.9}% 69
+\BOOKMARK [1][-]{section.9.8}{Subroutines}{chapter.9}% 70
+\BOOKMARK [2][-]{subsection.9.8.1}{Subroutine Nesting}{section.9.8}% 71
+\BOOKMARK [2][-]{subsection.9.8.2}{Parameter Passing}{section.9.8}% 72
+\BOOKMARK [2][-]{subsection.9.8.3}{Stack Frame}{section.9.8}% 73
+\BOOKMARK [0][-]{chapter.10}{IO Devices}{}% 74
+\BOOKMARK [1][-]{section.10.1}{Program Control IO}{chapter.10}% 75
+\BOOKMARK [1][-]{section.10.2}{Interrupts}{chapter.10}% 76
+\BOOKMARK [2][-]{subsection.10.2.1}{Notes on SUBROUTINE INTERRUPT IMPLEMENTATION: }{section.10.2}% 77
+\BOOKMARK [2][-]{subsection.10.2.2}{Enable and Disabling Interrupts}{section.10.2}% 78
+\BOOKMARK [2][-]{subsection.10.2.3}{Process for a Single Device Interrupt Call}{section.10.2}% 79
+\BOOKMARK [1][-]{section.10.3}{Multiple Device Interrupts}{chapter.10}% 80
+\BOOKMARK [2][-]{subsection.10.3.1}{Approach One: Na\357ve Polling}{section.10.3}% 81
+\BOOKMARK [2][-]{subsection.10.3.2}{Vectored Inputs}{section.10.3}% 82
+\BOOKMARK [2][-]{subsection.10.3.3}{Interrupt Nesting}{section.10.3}% 83
+\BOOKMARK [1][-]{section.10.4}{Processor Control Register}{chapter.10}% 84
