@@ -35,19 +35,19 @@ Any hex number can be expressed as 4 binary digits. Make a correspondence table 
 \subsection{Converting from base 10 $\to$ base 16 (and vice versa)}
 Just go through base 2 fam.
 
-\chapter{Logic Functions and Logic Gates}
-\section{Or Gate}
-\begin{enumerate}
-\item Symbols
-\item Switch structure
-\item Truth table
-\end{enumerate}
+% \chapter{Logic Functions and Logic Gates}
+% \section{Or Gate}
+% \begin{enumerate}
+% \item Symbols
+% \item Switch structure
+% \item Truth table
+% \end{enumerate}
 
-\section{And Gate}
+% \section{And Gate}
 
-\section{Inverter}
+% \section{Inverter}
 
-\section{XOR}
+% \section{XOR}
 
 
 \chapter{Boolean Algebra}
@@ -113,10 +113,10 @@ un-complimented.
 You can pretty easily make all the valid max terms from a truth table. To generate a POS
 expression, you multiply (AND) the maxterms that sum to zero. 
 
-\section{NAND and NOR Logic Networks (TB 2.7)}
+% \section{NAND and NOR Logic Networks (TB 2.7)}
 
 
-\section{Three-Way Light Control (TB 2.8.1)}
+% \section{Three-Way Light Control (TB 2.8.1)}
 
 
 \chapter{How 2 Verilog}
@@ -535,9 +535,9 @@ Let's take a D Flip Flop component and loop the value of $Q$ and $\bar{Q}$ back 
 input $D$. Let's make $T$ the new input. $T$ switches the input of $D$ between $Q$ and 
 $\bar{Q}$. 
 
-\section{Flip-Flop Reset/Preset}
+% \section{Flip-Flop Reset/Preset}
 
-\section{Summary of Objects}
+% \section{Summary of Objects}
 
 \section{Verilog Implementations}
 \subsection{Gated D-Latch}
@@ -639,7 +639,7 @@ case(A)
 endcase
 \end{lstlisting}
 
-\subsection{State Machine Diagrams and Sequantial Diagrams}
+% \subsection{State Machine Diagrams and Sequantial Diagrams}
 
 \subsection{Case Statements for State Machines}
 Quick example:
@@ -1040,7 +1040,7 @@ If skew time is positive, you can have a higher $F_max$. Negative leads to lower
 \subsection{Process for Timing Analysis}
 \begin{enumerate}
 \item Calculate longest path the signal must traverse during a clock cycle. $T_{min} \geq T_{longest_path}$
-\item Calculate hold time violation (which is the time the data must be constant for the latch to `save' the data). 
+\item Calculate hold time violation (which is the time the data must be constant for the latch to `save' the data). `'
 \item Calculate time violation: 
 \end{enumerate}
 
