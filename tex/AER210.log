@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  13 DEC 2019 02:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2019.1.7)  13 DEC 2019 02:16
 entering extended mode
 **./AER210.tex
 (AER210.tex
@@ -386,7 +386,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 ....1}Density and Mass}{10}{subsection.3.4.1}
+l.42 ....1}Density and Mass}{11}{subsection.3.4.1}
                                                   % [1
 
 ])
@@ -501,15 +501,15 @@ r/bx/n/12 SINGLE, COUNTERCLOCKWISE
  []
 
 [20] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 550.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 551.
  [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 550.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 551.
  (AER210.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 550.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 550.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 551.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 551.
 Package rerunfilecheck Info: File `AER210.out' has not changed.
 (rerunfilecheck)             Checksum: 48370A44E7896EEBA9DF2AB9F19F9674;4637.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 550.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 551.
  ) 
 Here is how much of TeX's memory you used:
  6453 strings out of 494866
@@ -538,7 +538,7 @@ onts/cm/cmsy8.pfb></Users/abhargava/Library/Application Support/MiKTeX/texmfs/i
 nstall/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/abhargava/Library/Appl
 ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb>
-Output written on AER210.pdf (23 pages, 246771 bytes).
+Output written on AER210.pdf (23 pages, 246887 bytes).
 PDF statistics:
  561 PDF objects out of 1000 (max. 8388607)
  146 named destinations out of 1000 (max. 500000)
