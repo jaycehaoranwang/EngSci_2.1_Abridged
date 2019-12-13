@@ -511,6 +511,41 @@ $$\int_C P\,dx+Q\,dy = \iint_D (\frac{\partial Q}{\partial x} - \frac{\partial P
 It's kind of the counterpart to $\int_a^b F'(x) dx = F(b)-F(a)$.
 
 \section{Curl and Divergence}
+\paragraph{Curl } is a measure of the rotation about a point in a vector field.
+$$curl F = \nabla \times F = 
+\begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\ 
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial }{\partial z} \\
+P & Q & R \notag
+\end{vmatrix}
+$$
+
+\paragraph{Divergence } is a measure of the amount of \textit{stuff} going in (or out of) a point. 
+$$div F = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z}$$
+
+\subsection{Properties of Divergence and Curl}
+\begin{enumerate}
+\item If $F$ has continuous second order derivatives, then $div curl F = 0$.
+\end{enumerate}
+
+\subsection{Vector form of Green's Theorem}
+$$\int_C F \cdot dr = \iint_D (curl\,F)\cdot k dA$$
+
+In other words, you can infer the \textit{curliness} of a surface in a vector field based on a line interal of the edge.
+
+\section{Divergence Theorem}
+$E$ is simple solid region with boundary surface $S$ with outward orientation. $F$ is a vector field in that area 
+with continuous partial derivatives. Then
+$$\iint_S \vec{F}\cdot d\vec{S} = \iiint_E div\,\vec{F} dV$$
+
+
+\section{Stoke's Theorem}
+If $S$ is an oriented piecewise-smooth surface with piecewise smooth closed boundary curve $C$ inside of 
+vector field $F$, then 
+$$\int_C \vec{F} \cdot d\vec{r} = \iint_S curl\,F\cdot d\vec{S}$$
+
+
+
 
 \end{document}
 

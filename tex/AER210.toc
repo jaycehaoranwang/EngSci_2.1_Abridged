@@ -88,3 +88,9 @@
 \contentsline {section}{\numberline {4.4}Green's Theorem}{20}{section.4.4}% 
 \contentsline {paragraph}{Note on orientation: }{21}{section*.32}% 
 \contentsline {section}{\numberline {4.5}Curl and Divergence}{21}{section.4.5}% 
+\contentsline {paragraph}{Curl }{21}{section*.33}% 
+\contentsline {paragraph}{Divergence }{21}{section*.34}% 
+\contentsline {subsection}{\numberline {4.5.1}Properties of Divergence and Curl}{21}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}Vector form of Green's Theorem}{21}{subsection.4.5.2}% 
+\contentsline {section}{\numberline {4.6}Divergence Theorem}{21}{section.4.6}% 
+\contentsline {section}{\numberline {4.7}Stoke's Theorem}{22}{section.4.7}% 
